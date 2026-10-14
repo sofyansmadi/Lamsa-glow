@@ -10,7 +10,7 @@ export const DEFAULT_COUNTRY = "AE";
 const KEY = "lamsa-country";
 
 export type Country = { isoCode: string; currency: string };
-type LivePrice = { price: Money; compareAtPrice: Money | null };
+type LivePrice = { price: Money; compareAtPrice: Money | null; availableForSale?: boolean };
 
 type Ctx = {
   country: string;
@@ -72,13 +72,13 @@ export function MarketProvider({ children }: { children: React.ReactNode }) {
     let live = true;
     storefront<{ products: { nodes: { variants: { nodes: ({ id: string } & LivePrice)[] } }[] } }>(
       `query @inContext(country: ${country}) { products(first: 100) { nodes { variants(first: 50) { nodes {
-        id price { amount currencyCode } compareAtPrice { amount currencyCode }
+        id availableForSale price { amount currencyCode } compareAtPrice { amount currencyCode }
       } } } } }`
     )
       .then((d) => {
         if (!live) return;
         const map: Record<string, LivePrice> = {};
-        for (const p of d.products.nodes) for (const v of p.variants.nodes) map[v.id] = { price: v.price, compareAtPrice: v.compareAtPrice };
+        for (const p of d.products.nodes) for (const v of p.variants.nodes) map[v.id] = { price: v.price, compareAtPrice: v.compareAtPrice, availableForSale: v.availableForSale };
         setPrices(map);
       })
       .catch(() => live && setPrices(null));

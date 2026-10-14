@@ -20,7 +20,7 @@ export default function CartDrawer({ locale }: { locale: Locale }) {
   }, [open, setOpen]);
 
   if (!open) return null;
-  const lines = cart?.lines.nodes ?? [];
+  const lines = (cart?.lines.nodes ?? []).filter((l) => l.quantity > 0);
 
   return (
     <>
@@ -31,7 +31,7 @@ export default function CartDrawer({ locale }: { locale: Locale }) {
           <button ref={closeRef} className="icon-btn" onClick={() => setOpen(false)} aria-label={d.close}>✕</button>
         </div>
         <div className="drawer-body">
-          {(error || !enabled) && <p className="alert" role="status">{d.checkoutUnavailable}</p>}
+          {(error || !enabled) && <p className="alert" role="status">{error === "country" ? d.notInCountryLong : d.checkoutUnavailable}</p>}
           {lines.length === 0 && enabled && !error && <p className="note">{d.cartEmpty}</p>}
           {lines.map((l) => {
             const name = productCopy[l.merchandise.product.handle]?.[locale].name ?? l.merchandise.product.title;

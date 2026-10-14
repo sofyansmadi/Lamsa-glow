@@ -15,6 +15,8 @@ const dict = {
     switchLang: "English",
     announce: "نشحن لكل دول العالم",
     shipTo: "البلد والعملة",
+    notInCountry: "غير متوفر لبلدك حالياً",
+    notInCountryLong: "هذا المنتج غير متوفر للشحن إلى البلد المختار حالياً. جرّبي بلداً آخر أو راسلينا.",
     heroTitle: "توهّجك على بُعد لمسة",
     heroBody:
       "أجهزة الجمال والعناية بالبشرة التي تحبها كل فتاة، في مكان واحد. من روتينك الصباحي إلى جلسة الدلال المسائية، لمسة معك أينما كنتِ.",
@@ -75,6 +77,8 @@ const dict = {
     switchLang: "العربية",
     announce: "We ship worldwide",
     shipTo: "Country and currency",
+    notInCountry: "Not available in your country yet",
+    notInCountryLong: "This item can't ship to the selected country yet. Try another country or contact us.",
     heroTitle: "Your glow is one touch away",
     heroBody:
       "The beauty devices and skincare every girl loves, all in one place. From your morning routine to your evening pamper, Lamsa goes wherever you are.",

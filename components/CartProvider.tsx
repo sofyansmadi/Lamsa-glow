@@ -101,21 +101,37 @@ export function CartProvider({ locale, children }: { locale: Locale; children: R
       try {
         const lines = [{ merchandiseId: variantId, quantity }];
         let next: Cart;
+        let warnings: { code: string }[] = [];
         if (cart) {
-          const d = await call<{ cartLinesAdd: { cart: Cart } }>(
-            `mutation A($id: ID!, $lines: [CartLineInput!]!) ${ctx} { cartLinesAdd(cartId: $id, lines: $lines) { cart { ${CART_FIELDS} } } }`,
+          const d = await call<{ cartLinesAdd: { cart: Cart; warnings: { code: string }[] } }>(
+            `mutation A($id: ID!, $lines: [CartLineInput!]!) ${ctx} { cartLinesAdd(cartId: $id, lines: $lines) { cart { ${CART_FIELDS} } warnings { code } } }`,
             { id: cart.id, lines }
           );
           next = d.cartLinesAdd.cart;
+          warnings = d.cartLinesAdd.warnings;
         } else {
-          const d = await call<{ cartCreate: { cart: Cart } }>(
-            `mutation N($lines: [CartLineInput!]!) ${ctx} { cartCreate(input: { lines: $lines, buyerIdentity: { countryCode: ${country} } }) { cart { ${CART_FIELDS} } } }`,
+          const d = await call<{ cartCreate: { cart: Cart; warnings: { code: string }[] } }>(
+            `mutation N($lines: [CartLineInput!]!) ${ctx} { cartCreate(input: { lines: $lines, buyerIdentity: { countryCode: ${country} } }) { cart { ${CART_FIELDS} } warnings { code } } }`,
             { lines }
           );
           next = d.cartCreate.cart;
+          warnings = d.cartCreate.warnings;
           try { localStorage.setItem(KEY, next.id); } catch {}
         }
         setCart(next); setOpen(true);
+        if (warnings.some((w) => /STOCK|NOT_AVAILABLE|UNAVAILABLE/.test(w.code))) {
+          // Shopify keeps the line at a price of 0; take it out so the bag never shows a free item.
+          const dead = next.lines.nodes.filter((l) => Number(l.cost.totalAmount.amount) === 0).map((l) => l.id);
+          if (dead.length) {
+            const r = await call<{ cartLinesRemove: { cart: Cart } }>(
+              `mutation R($id: ID!, $ids: [ID!]!) ${ctx} { cartLinesRemove(cartId: $id, lineIds: $ids) { cart { ${CART_FIELDS} } } }`,
+              { id: next.id, ids: dead }
+            );
+            setCart(r.cartLinesRemove.cart);
+          }
+          setError("country");
+          return false;
+        }
         return true;
       } catch {
         setError("unavailable"); setOpen(true);

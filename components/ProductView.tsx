@@ -24,6 +24,8 @@ export default function ProductView({ product, copy, locale }: { product: Produc
   );
   const choosable = product.options.filter((o) => o.values.length > 1);
   const live = useVariantPrice(variant);
+  // In stock overall, but Shopify can't ship it to the shopper's chosen country yet.
+  const shipsHere = live.availableForSale !== false;
   const was = realCompareAt({ ...variant, ...live });
   const img = product.images[imageIndex];
 
@@ -82,8 +84,8 @@ export default function ProductView({ product, copy, locale }: { product: Produc
           </fieldset>
         ))}
 
-        <button className="btn btn-solid btn-block" disabled={!variant.availableForSale || busy} onClick={onAdd}>
-          {!variant.availableForSale ? d.soldOut : busy ? d.adding : justAdded ? d.added : d.addToCart}
+        <button className="btn btn-solid btn-block" disabled={!variant.availableForSale || !shipsHere || busy} onClick={onAdd}>
+          {!variant.availableForSale ? d.soldOut : !shipsHere ? d.notInCountry : busy ? d.adding : justAdded ? d.added : d.addToCart}
         </button>
         <p className="note">{d.shippingLine}</p>
 
