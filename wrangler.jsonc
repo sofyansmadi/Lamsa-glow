@@ -1,0 +1,10 @@
+// Cloudflare Workers static-assets config: serves the exported site in out/ for free.
+{
+  "name": "lamsa-glow",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./out",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}
