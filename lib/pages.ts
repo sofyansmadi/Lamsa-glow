@@ -10,23 +10,33 @@ const email = site.contactEmail;
 export const pages: Record<string, Record<Locale, Page>> = {
   about: {
     ar: {
-      title: "عن لمسة",
+      title: "قصتنا",
       blocks: [
         { p: [
-          "لمسة متجر أونلاين لأجهزة التجميل ومنتجات العناية بالبشرة، بنختار منتجاته لعميلاتنا بالخليج.",
-          "قبل ما نعرض أي منتج، بنطلب منه عينة ونجرّبه بنفسنا. اللي ما بيعجبنا ما بنبيعه.",
+          "«لمسة» كلمة صغيرة تحمل الكثير: لمسة عناية في الصباح، لمسة دلال في المساء، ولمسة ثقة ترافقك طوال اليوم.",
+          "من هنا بدأت لمسة: علامة تجمع عالم الفتاة في مكان واحد. أجهزة جمال ذكية تنقل روتين الصالون إلى بيتك، ومنتجات عناية بالبشرة لكل يوم، وماسكات تمنحك دقائق تخصك وحدك.",
         ] },
-        { h: "مين ورا لمسة", p: [`لمسة علامة تجارية تابعة لشركة ${c.name}، المسجلة في إنجلترا وويلز برقم ${c.number}.`] },
+        { h: "ما نؤمن به", ul: [
+          "الاهتمام بنفسك ليس رفاهية، بل عادة تستحقينها كل يوم",
+          "الجمال يبدأ من الراحة: منتجات سهلة الاستخدام تناسب يومك",
+          "أينما كنتِ في العالم، يجب أن يصلك ما تحبين",
+        ] },
+        { h: "من وراء لمسة", p: [`لمسة علامة تجارية تابعة لشركة ${c.name}، المسجلة في إنجلترا وويلز برقم ${c.number}.`] },
       ],
     },
     en: {
-      title: "About Lamsa",
+      title: "Our story",
       blocks: [
         { p: [
-          "Lamsa is an online shop for beauty devices and skincare, chosen for customers across the Gulf.",
-          "Before we list anything, we order a sample and try it ourselves. If we don't like it, we don't sell it.",
+          "Lamsa means “touch” in Arabic. A touch of care in the morning, a touch of pampering at night, and a touch of confidence that stays with you all day.",
+          "That’s where Lamsa began: one brand that brings a girl’s whole world together. Smart beauty devices that bring the salon routine home, skincare for every day, and masks that give you a few minutes that are yours alone.",
         ] },
-        { h: "Who runs Lamsa", p: [`Lamsa is a brand of ${c.name}, a company registered in England and Wales (Company No. ${c.number}).`] },
+        { h: "What we believe", ul: [
+          "Caring for yourself isn’t a luxury; it’s a habit you deserve every day",
+          "Beauty starts with ease: products that fit into your day",
+          "Wherever you are in the world, what you love should reach you",
+        ] },
+        { h: "Who’s behind Lamsa", p: [`Lamsa is a brand of ${c.name}, a company registered in England and Wales (Company No. ${c.number}).`] },
       ],
     },
   },
@@ -35,22 +45,24 @@ export const pages: Record<string, Record<Locale, Page>> = {
       title: "الشحن والتوصيل",
       blocks: [
         { p: [
-          "بنشحن لدول الخليج: الإمارات، السعودية، الكويت، قطر، البحرين، وعُمان.",
-          `أغلب الطلبات بتوصل خلال ${site.shippingDays.ar} من تأكيد الطلب. مدة التوصيل وتكلفته بتظهر قبل ما تدفعي.`,
-          "بعد ما يتشحن طلبك، بنبعتلك رقم تتبّع على الإيميل.",
+          "نشحن إلى معظم دول العالم. أدخلي عنوانك في صفحة الدفع وستظهر لك تكلفة الشحن ومدته قبل أن تدفعي.",
+          `تصل معظم الطلبات خلال ${site.shippingDays.ar} من تأكيد الطلب، وقد تختلف المدة حسب البلد.`,
+          "بعد شحن طلبك، نرسل لك رقم التتبّع على بريدك الإلكتروني.",
         ] },
-        { h: "إذا تأخر طلبك", p: [`راسلينا على ${email} برقم الطلب، وبنتابع مع شركة الشحن.`] },
+        { h: "الجمارك والرسوم", p: ["في بعض الدول قد تفرض الجمارك رسوماً أو ضرائب عند الاستلام. هذه الرسوم يحددها بلد الوصول، ولا تدخل ضمن سعر الطلب."] },
+        { h: "إذا تأخر طلبك", p: [`راسلينا على ${email} مع رقم الطلب، وسنتابع مع شركة الشحن.`] },
       ],
     },
     en: {
       title: "Shipping & delivery",
       blocks: [
         { p: [
-          "We ship across the GCC: UAE, Saudi Arabia, Kuwait, Qatar, Bahrain and Oman.",
-          `Most orders arrive within ${site.shippingDays.en} of confirmation. You'll see the delivery time and cost before you pay.`,
+          "We ship to most countries worldwide. Enter your address at checkout to see the shipping cost and delivery time before you pay.",
+          `Most orders arrive within ${site.shippingDays.en} of confirmation; times vary by country.`,
           "Once your order ships, we email you a tracking number.",
         ] },
-        { h: "If your order is late", p: [`Email ${email} with your order number and we'll chase the carrier.`] },
+        { h: "Customs and duties", p: ["Some countries charge import duties or taxes on delivery. These are set by the destination country and aren’t included in your order total."] },
+        { h: "If your order is late", p: [`Email ${email} with your order number and we’ll chase the carrier.`] },
       ],
     },
   },
@@ -59,26 +71,26 @@ export const pages: Record<string, Record<Locale, Page>> = {
       title: "الاسترجاع والاستبدال",
       blocks: [
         { h: "منتج تالف أو غير مطابق", p: [
-          `إذا وصلك المنتج تالف أو مختلف عن الوصف، راسلينا خلال ${site.returnDays} يوم من الاستلام مع صور، وبنرجّعلك المبلغ أو نبدّله بدون أي تكلفة عليكِ.`,
+          `إذا وصلك المنتج تالفاً أو مختلفاً عن الوصف، راسلينا خلال ${site.returnDays} يوماً من الاستلام مع صور، وسنستبدله أو نعيد لك المبلغ دون أي تكلفة عليكِ.`,
         ] },
-        { h: "إذا غيّرتي رأيك", p: [
-          `بتقدري ترجّعي المنتج خلال ${site.returnDays} يوم من الاستلام إذا كان مغلّف وما انفتح. تكلفة شحن الإرجاع عليكِ، وبنرجّعلك ثمن المنتج بعد ما يوصلنا.`,
-          "لأسباب صحية، ما بنقدر نقبل إرجاع منتجات العناية بالبشرة والأجهزة اللي انفتحت أو انستخدمت، إلا إذا كانت تالفة.",
+        { h: "إذا غيّرتِ رأيك", p: [
+          `يمكنك إرجاع المنتج خلال ${site.returnDays} يوماً من الاستلام إذا كان مغلّفاً ولم يُفتح. تكلفة شحن الإرجاع عليكِ، ونعيد لك ثمن المنتج بعد وصوله إلينا.`,
+          "لأسباب صحية، لا نقبل إرجاع منتجات العناية والأجهزة بعد فتحها أو استخدامها، إلا إذا كانت معيبة.",
         ] },
-        { h: "كيف ترجّعي", p: [`ابعتيلنا على ${email} رقم الطلب وسبب الإرجاع، وبنرد عليكِ بالخطوات.`] },
+        { h: "كيف تُرجعين طلبك", p: [`أرسلي لنا على ${email} رقم الطلب وسبب الإرجاع، وسنرد عليكِ بالخطوات.`] },
       ],
     },
     en: {
       title: "Returns & exchanges",
       blocks: [
         { h: "Damaged or not as described", p: [
-          `If your item arrives damaged or different from its description, email us within ${site.returnDays} days of delivery with photos and we'll refund or replace it at no cost to you.`,
+          `If your item arrives damaged or different from its description, email us within ${site.returnDays} days of delivery with photos and we’ll replace or refund it at no cost to you.`,
         ] },
         { h: "Changed your mind", p: [
-          `You can return an item within ${site.returnDays} days of delivery if it's sealed and unopened. Return shipping is on you, and we refund the item once it reaches us.`,
-          "For hygiene reasons we can't take back opened or used skincare or devices unless they're faulty.",
+          `You can return an item within ${site.returnDays} days of delivery if it’s sealed and unopened. Return shipping is on you, and we refund the item once it reaches us.`,
+          "For hygiene reasons we can’t take back opened or used skincare or devices unless they’re faulty.",
         ] },
-        { h: "How to return", p: [`Email ${email} with your order number and the reason, and we'll reply with the steps.`] },
+        { h: "How to return", p: [`Email ${email} with your order number and the reason, and we’ll reply with the steps.`] },
       ],
     },
   },
@@ -86,11 +98,11 @@ export const pages: Record<string, Record<Locale, Page>> = {
     ar: {
       title: "سياسة الخصوصية",
       blocks: [
-        { p: [`هاد الموقع تديره شركة ${c.name}، ${c.office}.`] },
-        { h: "شو بنجمع", ul: ["اسمك وعنوانك وإيميلك ورقمك، لما تطلبي", "تفاصيل الطلب", "بيانات الدفع بتتعامل معها Shopify مباشرة، وما بتوصلنا أرقام البطاقات"] },
-        { h: "ليش", ul: ["لتجهيز طلبك وشحنه", "للتواصل معكِ بخصوص الطلب", "للالتزام بالقوانين المحاسبية والضريبية"] },
-        { h: "مع مين بنشاركها", p: ["مع Shopify (منصة المتجر والدفع)، وشركات الشحن، والموردين اللي بيجهّزوا طلبك، وبس بالقدر اللازم."] },
-        { h: "حقوقك", p: [`بتقدري تطلبي نسخة من بياناتك أو تعديلها أو حذفها بأي وقت على ${email}.`] },
+        { p: [`يدير هذا الموقع شركة ${c.name}، ${c.office}.`] },
+        { h: "ما الذي نجمعه", ul: ["اسمك وعنوانك وبريدك الإلكتروني ورقم هاتفك عند الطلب", "تفاصيل الطلب", "بيانات الدفع تعالجها Shopify مباشرة، ولا تصلنا أرقام البطاقات"] },
+        { h: "لماذا", ul: ["لتجهيز طلبك وشحنه", "للتواصل معكِ بخصوص طلبك", "للالتزام بالقوانين المحاسبية والضريبية"] },
+        { h: "مع من نشاركها", p: ["مع Shopify (منصة المتجر والدفع)، وشركات الشحن، والشركاء الذين يجهّزون طلبك، وبالقدر اللازم فقط."] },
+        { h: "حقوقك", p: [`يمكنك طلب نسخة من بياناتك أو تعديلها أو حذفها في أي وقت عبر ${email}.`] },
       ],
     },
     en: {
@@ -99,7 +111,7 @@ export const pages: Record<string, Record<Locale, Page>> = {
         { p: [`This site is operated by ${c.name}, ${c.office}.`] },
         { h: "What we collect", ul: ["Your name, address, email and phone when you order", "Your order details", "Payment details are handled directly by Shopify; we never see card numbers"] },
         { h: "Why", ul: ["To prepare and ship your order", "To contact you about your order", "To meet accounting and tax obligations"] },
-        { h: "Who we share it with", p: ["Shopify (our store and checkout platform), carriers, and the suppliers who fulfil your order, only as far as needed."] },
+        { h: "Who we share it with", p: ["Shopify (our store and checkout platform), carriers, and the partners who prepare your order, only as far as needed."] },
         { h: "Your rights", p: [`You can ask for a copy of your data, a correction, or deletion at any time at ${email}.`] },
       ],
     },
@@ -108,17 +120,17 @@ export const pages: Record<string, Record<Locale, Page>> = {
     ar: {
       title: "الشروط والأحكام",
       blocks: [
-        { p: [`هاد المتجر تديره شركة ${c.name}، المسجلة في إنجلترا وويلز برقم ${c.number}. بشرائك من الموقع، بتوافقي على هالشروط.`] },
-        { h: "الأسعار والدفع", p: ["الأسعار بالدرهم الإماراتي. الشحن والضرائب، إن وجدت، بتظهر بصفحة الدفع قبل ما تأكدي الطلب."] },
-        { h: "استخدام الأجهزة", p: ["اقرئي دليل الاستخدام قبل أول استخدام. أجهزة IPL والميكرونيدلنغ مش مناسبة لكل أنواع البشرة أو الحالات الصحية؛ إذا عندك أي حالة صحية أو حامل، استشيري طبيب قبل الاستخدام."] },
-        { h: "القانون", p: ["تخضع هالشروط لقوانين إنجلترا وويلز، بدون ما يأثر هاد على أي حقوق بتعطيكِ إياها قوانين حماية المستهلك ببلدك."] },
+        { p: [`يدير هذا المتجر شركة ${c.name}، المسجلة في إنجلترا وويلز برقم ${c.number}. بشرائك من الموقع، فإنك توافقين على هذه الشروط.`] },
+        { h: "الأسعار والدفع", p: ["تظهر الأسعار وتكلفة الشحن والضرائب، إن وجدت، في صفحة الدفع قبل تأكيد الطلب."] },
+        { h: "استخدام الأجهزة", p: ["اقرئي دليل الاستخدام قبل أول استخدام. أجهزة IPL والميكرونيدلنغ لا تناسب كل أنواع البشرة أو الحالات الصحية؛ إذا كانت لديكِ حالة صحية أو كنتِ حاملاً، استشيري طبيباً قبل الاستخدام."] },
+        { h: "القانون", p: ["تخضع هذه الشروط لقوانين إنجلترا وويلز، دون المساس بأي حقوق تمنحك إياها قوانين حماية المستهلك في بلدك."] },
       ],
     },
     en: {
       title: "Terms & conditions",
       blocks: [
         { p: [`This shop is operated by ${c.name}, registered in England and Wales (Company No. ${c.number}). By ordering, you agree to these terms.`] },
-        { h: "Prices and payment", p: ["Prices are in UAE dirhams. Shipping and any taxes are shown at checkout before you confirm your order."] },
+        { h: "Prices and payment", p: ["Prices, shipping and any taxes are shown at checkout before you confirm your order."] },
         { h: "Using the devices", p: ["Read the manual before first use. IPL and microneedling devices aren't suitable for every skin type or health condition; if you have a medical condition or are pregnant, speak to a doctor first."] },
         { h: "Law", p: ["These terms are governed by the laws of England and Wales, without affecting any rights your local consumer law gives you."] },
       ],
@@ -128,7 +140,7 @@ export const pages: Record<string, Record<Locale, Page>> = {
     ar: {
       title: "تواصلي معنا",
       blocks: [
-        { p: [`راسلينا على ${email}، وبنرد خلال يوم إلى يومين عمل.`, "إذا سؤالك عن طلب، اكتبي رقم الطلب."] },
+        { p: [`راسلينا على ${email}، ونرد خلال يوم إلى يومي عمل.`, "إذا كان سؤالك عن طلب، اكتبي رقم الطلب."] },
         { h: "الشركة", p: [`${c.name}، ${c.office}. رقم الشركة: ${c.number}.`] },
       ],
     },

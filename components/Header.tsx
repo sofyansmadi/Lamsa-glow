@@ -14,6 +14,8 @@ export default function Header({ locale }: { locale: Locale }) {
   const count = cart?.totalQuantity ?? 0;
 
   return (
+    <>
+    <p className="announce">{d.announce}</p>
     <header className="header">
       <div className="wrap header-row">
         <Link href={`/${locale}`} className="logo">
@@ -38,5 +40,6 @@ export default function Header({ locale }: { locale: Locale }) {
         </div>
       </div>
     </header>
+    </>
   );
 }

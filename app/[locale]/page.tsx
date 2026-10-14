@@ -9,11 +9,18 @@ import { notFound } from "next/navigation";
 const HERO_HANDLE = "wireless-led-mask-7-color-led-face-mask-photon-skin-firming-anti-aging-rejuvenation-beauty-mask-machine";
 const HERO_IMAGE_INDEX = 6;
 const FEATURED = [
-  "kodo-2026-high-end-customization-ice-laser-hair-removal-laser-epilator-permanent-ipl-painless-photoepilator-4-in-1-face-and-body",
-  "pdrn-pink-collagen-capsule-cream-with-niacinamide-cream-for-uneven-skin-tone-lightweight-face-moisturizer-original-korean-cream",
-  "bio-collagen-collagen-face-mask-face-barrier-repair-soothing-ampoule-essence-moisturizing-refined-pores-mask-korean-skin-care",
+  "wireless-led-mask-7-color-led-face-mask-photon-skin-firming-anti-aging-rejuvenation-beauty-mask-machine",
+  "30ml-salmon-pdrn-pink-peptide-glow-facial-serum-dark-spot-care-even-skin-tone-collagen-firming-brightening-face-essence",
   "mini-portable-humidifier-facial-steamer-device-beauty-spray-hydrating-apparatus-cold-spray-apparatus-rechargeable-nano-spray",
+  "5pcs-bio-collagen-face-mask-deep-moisturizing-hydrating-overnight-hydrogel-facial-mask-vc-whitening-anti-aging-skincare",
 ];
+
+// One picture per world: [product handle prefix, image index]. Chosen for clean, label-free shots.
+const WORLDS = [
+  { key: "devices", handle: "mini-portable-humidifier", image: 0 },
+  { key: "skincare", handle: "pdrn-pink-collagen-capsule", image: 4 },
+  { key: "masks", handle: "5pcs-bio-collagen", image: 4 },
+] as const;
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -21,7 +28,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const d = t(locale);
   const products = await getProducts();
   const hero = products.find((p) => p.handle === HERO_HANDLE) ?? products[0];
-  const featured = FEATURED.map((h) => products.find((p) => p.handle === h)).filter(Boolean).slice(0, 4);
+  const featured = FEATURED.map((h) => products.find((p) => p.handle === h || p.handle.startsWith(h.slice(0, 30)))).filter(Boolean).slice(0, 4);
+  const worlds = WORLDS.map((w) => ({ ...w, img: products.find((p) => p.handle.startsWith(w.handle))?.images[w.image] }));
   const heroImg = hero?.images[HERO_IMAGE_INDEX] ?? hero?.images[0];
 
   return (
@@ -49,6 +57,31 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
       <section className="section">
         <div className="wrap">
+          <div className="section-head"><h2>{d.worldsTitle}</h2></div>
+          <div className="worlds">
+            {worlds.map((w) => (
+              <Link key={w.key} href={`/${locale}/shop?c=${w.key}`} className="world">
+                {w.img && <img src={sized(w.img.url, 700)} alt="" width={700} height={700} loading="lazy" />}
+                <span className="world-text">
+                  <strong>{d.worlds[w.key].t}</strong>
+                  <span>{d.worlds[w.key].d}</span>
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="manifesto">
+        <div className="wrap">
+          <p className="manifesto-line">{d.manifesto}</p>
+          <p className="manifesto-body">{d.manifestoBody}</p>
+          <Link href={`/${locale}/about`} className="link link-light">{d.nav.about}</Link>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="wrap">
           <div className="section-head">
             <h2>{d.featured}</h2>
             <Link href={`/${locale}/shop`} className="link">{d.viewAll}</Link>
@@ -60,14 +93,12 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       </section>
 
       <section className="wrap">
-        <div className="why">
-          <h2>{d.whyTitle}</h2>
-          <ul className="why-list">
-            {d.why.map((w) => (
-              <li key={w.t}><h3>{w.t}</h3><p>{w.d}</p></li>
-            ))}
-          </ul>
-        </div>
+        <h2 className="visually-hidden">{d.whyTitle}</h2>
+        <ul className="promise">
+          {d.why.map((w) => (
+            <li key={w.t}><h3>{w.t}</h3><p>{w.d}</p></li>
+          ))}
+        </ul>
       </section>
     </>
   );
