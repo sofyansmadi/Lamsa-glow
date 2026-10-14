@@ -1,18 +1,25 @@
-# Rebuilds the site on Cloudflare Pages every 6 hours so new products, prices and photos
-# from Shopify show up without a code change. Needs one repo secret: CF_DEPLOY_HOOK
-# (Cloudflare Pages > your project > Settings > Builds > Deploy hooks).
+# Every 6 hours, pull the catalog from Shopify. If products, prices or photos changed,
+# commit the new snapshot; Cloudflare sees the push and redeploys the site. No secrets needed.
 name: Refresh products
 on:
   schedule:
     - cron: "17 */6 * * *"
   workflow_dispatch:
+permissions:
+  contents: write
 jobs:
-  rebuild:
+  sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger Cloudflare Pages build
-        env:
-          HOOK: ${{ secrets.CF_DEPLOY_HOOK }}
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/sync-catalog.mjs
+      - name: Commit if the catalog changed
         run: |
-          if [ -z "$HOOK" ]; then echo "CF_DEPLOY_HOOK not set yet, skipping."; exit 0; fi
-          curl -fsS -X POST "$HOOK"
+          if git diff --quiet data/catalog.json; then echo "No changes."; exit 0; fi
+          git config user.name "lamsa-bot"
+          git config user.email "lamsa-bot@users.noreply.github.com"
+          git commit -am "Refresh catalog from Shopify"
+          git push

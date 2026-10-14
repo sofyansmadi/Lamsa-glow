@@ -28,25 +28,21 @@ but the bag and checkout stay off.
 Prices, stock, images and variants always come from Shopify. A new product added in Shopify shows up
 automatically; add an entry for it in `lib/content.ts` to give it an Arabic name, category and description.
 
-## Deploy (free, on Cloudflare Pages)
+## Deploy (free, on Cloudflare Workers)
 
-The site builds to plain static files (`npm run build` writes them to `out/`), so it needs no server
-and no paid plan. Cloudflare Pages' free plan allows shops and commercial sites.
+The site builds to plain static files (`npm run build` writes them to `out/`) and is served by
+Cloudflare Workers static assets on the free plan, which allows shops and commercial sites.
+`wrangler.jsonc` holds the config. The Cloudflare project is linked to this repo, so every push to
+`main` rebuilds and redeploys on its own.
 
-1. Sign up free at [dash.cloudflare.com](https://dash.cloudflare.com).
-2. Workers & Pages > Create > Pages > Connect to Git, and pick this repo.
-3. Framework preset: **Next.js (Static HTML Export)**. Build command `npm run build`, output directory `out`.
-4. Save and deploy. Every push to `main` redeploys on its own.
-5. Custom domain: Pages project > Custom domains > add your domain.
+Live: https://lamsa-glow.sofyansmadi0.workers.dev (add a custom domain under the project's Domains tab).
 
 ### Keep products fresh
 
-Products, prices and photos are baked in at build time. The bag and checkout always talk to Shopify live,
-so customers pay the real current price either way. To pull catalog changes in automatically:
-
-1. Pages project > Settings > Builds > Deploy hooks > add one named `refresh` and copy the URL.
-2. In GitHub: repo Settings > Secrets and variables > Actions > New secret named `CF_DEPLOY_HOOK`, paste the URL.
-
-`.github/workflows/refresh.yml` then rebuilds every 6 hours. To refresh right away, run it from the Actions tab.
+Products, prices and photos are baked in at build time; the bag and checkout always talk to Shopify live,
+so customers pay the real current price either way. `.github/workflows/refresh.yml` runs every 6 hours,
+pulls the catalog into `data/catalog.json` with `scripts/sync-catalog.mjs`, and commits it only when
+something changed. That push triggers a redeploy. To refresh right away, run "Refresh products" from the
+Actions tab.
 
 The public Storefront values live in `.env.production`. They're meant to be public; never put the private token there.
