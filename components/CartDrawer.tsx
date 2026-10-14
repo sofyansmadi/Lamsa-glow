@@ -37,7 +37,7 @@ export default function CartDrawer({ locale }: { locale: Locale }) {
             const name = productCopy[l.merchandise.product.handle]?.[locale].name ?? l.merchandise.product.title;
             return (
               <div className="line" key={l.id}>
-                {l.merchandise.image ? <img src={sized(l.merchandise.image.url, 160)} alt="" /> : <span />}
+                {(() => { const im = l.merchandise.image ?? l.merchandise.product.featuredImage; return im ? <img src={sized(im.url, 160)} alt="" /> : <span />; })()}
                 <div>
                   <div className="line-name">{name}</div>
                   {l.merchandise.title !== "Default Title" && <div className="line-variant"><bdi>{l.merchandise.title.split(" / ").map((v) => optionValueLabel(v, locale)).join(" / ")}</bdi></div>}

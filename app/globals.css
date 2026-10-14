@@ -97,7 +97,7 @@ p { margin: 0; }
 }
 .orb::after { content: ""; position: absolute; inset: 9%; border-radius: 50%; border: 1px solid color-mix(in srgb, var(--petal) 35%, transparent); }
 .orb-product { position: absolute; inset: 16%; border-radius: 50%; overflow: hidden; mix-blend-mode: multiply; }
-.orb-product img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.45); transform-origin: 50% 46%; }
+.orb-product img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.55); transform-origin: 50% 47%; }
 @keyframes glow { from { opacity: 0; transform: scale(.92); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) { .orb { animation: none; } }
 @media (max-width: 760px) {

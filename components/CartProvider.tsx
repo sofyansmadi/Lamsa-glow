@@ -12,7 +12,7 @@ export type CartLine = {
     id: string;
     title: string;
     image: { url: string } | null;
-    product: { handle: string; title: string };
+    product: { handle: string; title: string; featuredImage: { url: string } | null };
   };
   cost: { totalAmount: Money };
 };
@@ -32,7 +32,7 @@ const CART_FIELDS = `
     cost { totalAmount { amount currencyCode } }
     merchandise { ... on ProductVariant {
       id title image { url }
-      product { handle title }
+      product { handle title featuredImage { url } }
     } }
   } }
 `;

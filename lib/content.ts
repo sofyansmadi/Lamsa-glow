@@ -41,7 +41,7 @@ export const productCopy: Record<string, ProductCopy> = {
   "kodo-2026-new-laser-hair-removal-dropshipping-hot-sell-laser-epilator-permanent-ipl-painless-photoepilator-bikini-face-and-body": {
     category: "devices",
     ar: {
-      name: "جهاز KODO لإزالة الشعر IPL",
+      name: "جهاز IPL المحمول لإزالة الشعر",
       blurb: "إزالة الشعر مع وضع مخصص للعناية بالحبوب، بتصميم خفيف سهل الحمل.",
       points: [
         "900 ألف ومضة",
@@ -51,7 +51,7 @@ export const productCopy: Record<string, ProductCopy> = {
       ],
     },
     en: {
-      name: "KODO IPL Hair Removal Device",
+      name: "Portable IPL Hair Removal Device",
       blurb: "Hair removal plus a dedicated acne-care mode, in a light, portable design.",
       points: [
         "900,000 flashes",

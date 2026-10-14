@@ -7,7 +7,7 @@ import { notFound } from "next/navigation";
 
 // The hero shows the LED mask: the product that best says "glow".
 const HERO_HANDLE = "wireless-led-mask-7-color-led-face-mask-photon-skin-firming-anti-aging-rejuvenation-beauty-mask-machine";
-const HERO_IMAGE_INDEX = 6;
+const HERO_IMAGE_INDEX = 0;
 const FEATURED = [
   "wireless-led-mask-7-color-led-face-mask-photon-skin-firming-anti-aging-rejuvenation-beauty-mask-machine",
   "30ml-salmon-pdrn-pink-peptide-glow-facial-serum-dark-spot-care-even-skin-tone-collagen-firming-brightening-face-essence",
@@ -18,8 +18,8 @@ const FEATURED = [
 // One picture per world: [product handle prefix, image index]. Chosen for clean, label-free shots.
 const WORLDS = [
   { key: "devices", handle: "mini-portable-humidifier", image: 0 },
-  { key: "skincare", handle: "pdrn-pink-collagen-capsule", image: 4 },
-  { key: "masks", handle: "5pcs-bio-collagen", image: 4 },
+  { key: "skincare", handle: "30ml-salmon-pdrn", image: 2 },
+  { key: "masks", handle: "5pcs-bio-collagen", image: 0 },
 ] as const;
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
@@ -29,7 +29,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const products = await getProducts();
   const hero = products.find((p) => p.handle === HERO_HANDLE) ?? products[0];
   const featured = FEATURED.map((h) => products.find((p) => p.handle === h || p.handle.startsWith(h.slice(0, 30)))).filter(Boolean).slice(0, 4);
-  const worlds = WORLDS.map((w) => ({ ...w, img: products.find((p) => p.handle.startsWith(w.handle))?.images[w.image] }));
+  const worlds = WORLDS.map((w) => ({ ...w, img: products.find((p) => p.handle.startsWith(w.handle))?.images }))
+    .map((w) => ({ ...w, img: w.img?.[w.image] ?? w.img?.[0] }));
   const heroImg = hero?.images[HERO_IMAGE_INDEX] ?? hero?.images[0];
 
   return (
