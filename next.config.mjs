@@ -1,3 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = { reactStrictMode: true };
+// Static export: `npm run build` writes the whole site to `out/`, ready for any free static host.
+const nextConfig = { reactStrictMode: true, output: "export" };
 export default nextConfig;

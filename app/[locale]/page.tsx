@@ -4,7 +4,6 @@ import { isLocale, t } from "@/lib/i18n";
 import ProductCard from "@/components/ProductCard";
 import { notFound } from "next/navigation";
 
-export const revalidate = 600;
 
 // The hero shows the LED mask: the product that best says "glow".
 const HERO_HANDLE = "wireless-led-mask-7-color-led-face-mask-photon-skin-firming-anti-aging-rejuvenation-beauty-mask-machine";

@@ -6,7 +6,6 @@ import { isLocale, t } from "@/lib/i18n";
 import ProductCard from "@/components/ProductCard";
 import ShopGrid from "@/components/ShopGrid";
 
-export const revalidate = 600;
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;

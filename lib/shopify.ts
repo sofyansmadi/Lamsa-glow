@@ -40,7 +40,6 @@ export async function storefront<T>(query: string, variables: Record<string, unk
       "X-Shopify-Storefront-Access-Token": storefrontToken,
     },
     body: JSON.stringify({ query, variables }),
-    next: { revalidate: 600 },
   });
   if (!res.ok) throw new Error(`Shopify responded ${res.status}`);
   const json = await res.json();

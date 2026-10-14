@@ -5,7 +5,6 @@ import { isLocale, locales } from "@/lib/i18n";
 import { copyFor } from "@/lib/content";
 import ProductView from "@/components/ProductView";
 
-export const revalidate = 600;
 
 export async function generateStaticParams() {
   const products = await getProducts();
