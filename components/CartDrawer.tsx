@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { useCart } from "./CartProvider";
-import { formatPrice, t, type Locale } from "@/lib/i18n";
+import { formatPrice, optionValueLabel, t, type Locale } from "@/lib/i18n";
 import { sized } from "@/lib/shopify";
 import { productCopy } from "@/lib/content";
 
@@ -40,7 +40,7 @@ export default function CartDrawer({ locale }: { locale: Locale }) {
                 {l.merchandise.image ? <img src={sized(l.merchandise.image.url, 160)} alt="" /> : <span />}
                 <div>
                   <div className="line-name">{name}</div>
-                  {l.merchandise.title !== "Default Title" && <div className="line-variant"><bdi>{l.merchandise.title}</bdi></div>}
+                  {l.merchandise.title !== "Default Title" && <div className="line-variant"><bdi>{l.merchandise.title.split(" / ").map((v) => optionValueLabel(v, locale)).join(" / ")}</bdi></div>}
                   <div className="stepper" aria-label={d.qty}>
                     <button disabled={busy} onClick={() => update(l.id, l.quantity - 1)} aria-label="−">−</button>
                     <span>{l.quantity}</span>
