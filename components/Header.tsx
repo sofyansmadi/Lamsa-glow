@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCart } from "./CartProvider";
+import CountrySelect from "./CountrySelect";
 import { t, type Locale } from "@/lib/i18n";
 
 export default function Header({ locale }: { locale: Locale }) {
@@ -30,6 +31,7 @@ export default function Header({ locale }: { locale: Locale }) {
           <Link href={`/${locale}/about`}>{d.nav.about}</Link>
         </nav>
         <div className="header-actions">
+          <CountrySelect locale={locale} />
           <Link href={switchHref} className="lang" lang={other} hrefLang={other}>
             {d.switchLang}
           </Link>

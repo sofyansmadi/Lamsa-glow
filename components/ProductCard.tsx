@@ -1,13 +1,12 @@
 import Link from "next/link";
-import { formatPrice, t, type Locale } from "@/lib/i18n";
-import { minPrice, sized, type Product } from "@/lib/shopify";
+import { t, type Locale } from "@/lib/i18n";
+import { sized, type Product } from "@/lib/shopify";
+import CardPrice from "./CardPrice";
 import { copyFor } from "@/lib/content";
 
 export default function ProductCard({ product, locale }: { product: Product; locale: Locale }) {
   const d = t(locale);
   const c = copyFor(product.handle, locale);
-  const price = minPrice(product);
-  const multiple = new Set(product.variants.map((v) => v.price.amount)).size > 1;
   const img = product.images[0];
   return (
     <Link href={`/${locale}/products/${product.handle}`} className="card">
@@ -16,10 +15,7 @@ export default function ProductCard({ product, locale }: { product: Product; loc
       </div>
       {c && <span className="card-cat">{d.categories[c.category]}</span>}
       <span className="card-name">{c?.name ?? product.title}</span>
-      <span className="card-price">
-        {multiple ? `${d.from} ` : ""}
-        {formatPrice(price.amount, price.currencyCode, locale)}
-      </span>
+      <CardPrice variants={product.variants} locale={locale} />
     </Link>
   );
 }

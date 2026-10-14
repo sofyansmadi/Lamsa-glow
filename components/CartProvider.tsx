@@ -3,6 +3,7 @@
 import { createContext, useCallback, useContext, useEffect, useState } from "react";
 import { API_VERSION, storeDomain, storefrontToken, isLive, type Money } from "@/lib/shopify";
 import type { Locale } from "@/lib/i18n";
+import { useMarket } from "./MarketProvider";
 
 export type CartLine = {
   id: string;
@@ -66,8 +67,19 @@ export function CartProvider({ locale, children }: { locale: Locale; children: R
   const [open, setOpen] = useState(false);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const { country } = useMarket();
   const language = locale === "ar" ? "AR" : "EN";
-  const ctx = `@inContext(country: AE, language: ${language})`;
+  const ctx = `@inContext(country: ${country}, language: ${language})`;
+
+  // Keep the bag's currency and checkout country in step with the shopper's country.
+  useEffect(() => {
+    if (!isLive || !cart?.id) return;
+    call<{ cartBuyerIdentityUpdate: { cart: Cart | null } }>(
+      `mutation B($id: ID!) ${ctx} { cartBuyerIdentityUpdate(cartId: $id, buyerIdentity: { countryCode: ${country} }) { cart { ${CART_FIELDS} } } }`,
+      { id: cart.id }
+    ).then((d) => d.cartBuyerIdentityUpdate.cart && setCart(d.cartBuyerIdentityUpdate.cart)).catch(() => {});
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [country, cart?.id]);
 
   useEffect(() => {
     if (!isLive) return;
@@ -97,7 +109,7 @@ export function CartProvider({ locale, children }: { locale: Locale; children: R
           next = d.cartLinesAdd.cart;
         } else {
           const d = await call<{ cartCreate: { cart: Cart } }>(
-            `mutation N($lines: [CartLineInput!]!) ${ctx} { cartCreate(input: { lines: $lines }) { cart { ${CART_FIELDS} } } }`,
+            `mutation N($lines: [CartLineInput!]!) ${ctx} { cartCreate(input: { lines: $lines, buyerIdentity: { countryCode: ${country} } }) { cart { ${CART_FIELDS} } } }`,
             { lines }
           );
           next = d.cartCreate.cart;

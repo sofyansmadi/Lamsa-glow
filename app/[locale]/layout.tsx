@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import "../globals.css";
 import { dir, isLocale, locales, t } from "@/lib/i18n";
 import { CartProvider } from "@/components/CartProvider";
+import { MarketProvider } from "@/components/MarketProvider";
 import Header from "@/components/Header";
 import CartDrawer from "@/components/CartDrawer";
 import Footer from "@/components/Footer";
@@ -37,12 +38,14 @@ export default async function LocaleLayout({ children, params }: { children: Rea
         <link rel="preconnect" href="https://cdn.shopify.com" />
       </head>
       <body>
+        <MarketProvider>
         <CartProvider locale={locale}>
           <Header locale={locale} />
           <main>{children}</main>
           <Footer locale={locale} />
           <CartDrawer locale={locale} />
         </CartProvider>
+        </MarketProvider>
       </body>
     </html>
   );

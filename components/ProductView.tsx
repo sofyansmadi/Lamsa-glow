@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useCart } from "./CartProvider";
+import { useVariantPrice } from "./MarketProvider";
 import { formatPrice, optionLabel, optionValueLabel, t, type Locale } from "@/lib/i18n";
 import { realCompareAt, sized, type Product } from "@/lib/shopify";
 
@@ -22,7 +23,8 @@ export default function ProductView({ product, copy, locale }: { product: Produc
     [product.variants, selected, first]
   );
   const choosable = product.options.filter((o) => o.values.length > 1);
-  const was = realCompareAt(variant);
+  const live = useVariantPrice(variant);
+  const was = realCompareAt({ ...variant, ...live });
   const img = product.images[imageIndex];
 
   const availableFor = (name: string, value: string) =>
@@ -55,7 +57,7 @@ export default function ProductView({ product, copy, locale }: { product: Produc
       <div className="pdp-info">
         <h1>{copy?.name ?? product.title}</h1>
         <div className="price">
-          {formatPrice(variant.price.amount, variant.price.currencyCode, locale)}
+          {formatPrice(live.price.amount, live.price.currencyCode, locale)}
           {was && <s>{formatPrice(was.amount, was.currencyCode, locale)}</s>}
         </div>
         {copy && <p className="blurb">{copy.blurb}</p>}

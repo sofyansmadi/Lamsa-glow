@@ -14,6 +14,7 @@ const dict = {
     nav: { shop: "المتجر", devices: "الأجهزة", skincare: "العناية", masks: "الماسكات", about: "قصتنا" },
     switchLang: "English",
     announce: "نشحن لكل دول العالم",
+    shipTo: "البلد والعملة",
     heroTitle: "توهّجك على بُعد لمسة",
     heroBody:
       "أجهزة الجمال والعناية بالبشرة التي تحبها كل فتاة، في مكان واحد. من روتينك الصباحي إلى جلسة الدلال المسائية، لمسة معك أينما كنتِ.",
@@ -73,6 +74,7 @@ const dict = {
     nav: { shop: "Shop", devices: "Devices", skincare: "Skincare", masks: "Masks", about: "Our story" },
     switchLang: "العربية",
     announce: "We ship worldwide",
+    shipTo: "Country and currency",
     heroTitle: "Your glow is one touch away",
     heroBody:
       "The beauty devices and skincare every girl loves, all in one place. From your morning routine to your evening pamper, Lamsa goes wherever you are.",
