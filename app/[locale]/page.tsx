@@ -49,7 +49,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             <div className="orb" />
             {heroImg && (
               <div className="orb-product">
-                <img src={sized(heroImg.url, 900)} alt="" width={900} height={900} fetchPriority="high" />
+                <img src="/hero.webp" alt="" width={1200} height={1100} fetchPriority="high" />
               </div>
             )}
           </div>
