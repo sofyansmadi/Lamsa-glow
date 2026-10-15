@@ -95,16 +95,22 @@
     "descriptionHtml": "<h3>Advanced 2-in-1 IPL Hair Removal ✨</h3>\n<p>The Lamsa KODO IPL Device combines powerful hair removal with acne-clearing skin treatment in one sleek, portable tool — cordless salon results at home.</p>\n<ul>\n<li>⚡ 900,000 flashes — years of long-term use</li>\n<li>🎚️ 8 adjustable energy levels for a gentle, painless treatment</li>\n<li>💆 Dual function: hair removal + acne treatment (FR)</li>\n<li>🌍 Universal voltage (100–240V) — safe for worldwide use</li>\n<li>🏠 Safe, easy at-home use — no appointments needed</li>\n</ul>\n<p><strong>Best results:</strong> most users see over 75% hair reduction within 8 weeks of consistent use.</p>\n<p><strong>Shipping:</strong> Fast delivery across the UAE.</p>",
     "images": [
       {
+        "url": "https://cdn.shopify.com/s/files/1/0696/4523/8331/files/kodo-2026-new-laser-hair-removal-dropshi-1.jpg?v=1792049023",
+        "altText": "",
+        "width": 1056,
+        "height": 1056
+      },
+      {
         "url": "https://cdn.shopify.com/s/files/1/0696/4523/8331/files/kodo-2026-new-laser-hair-removal-dropshi-0.jpg?v=1792002799",
         "altText": "",
         "width": 1200,
         "height": 1200
       },
       {
-        "url": "https://cdn.shopify.com/s/files/1/0696/4523/8331/files/kodo-2026-new-laser-hair-removal-dropshi-1.jpg?v=1792002798",
+        "url": "https://cdn.shopify.com/s/files/1/0696/4523/8331/files/currentbody-laser-hair-removal-review-before-after-1440x1080.png?v=1792048859",
         "altText": "",
-        "width": 1200,
-        "height": 1200
+        "width": 1440,
+        "height": 1080
       }
     ],
     "options": [
@@ -133,11 +139,11 @@
         "title": "black HR FR / UK Plug / China Mainland",
         "availableForSale": true,
         "price": {
-          "amount": "218.0",
+          "amount": "746.0",
           "currencyCode": "AED"
         },
         "compareAtPrice": {
-          "amount": "216.0",
+          "amount": "2698.0",
           "currencyCode": "AED"
         },
         "selectedOptions": [
@@ -152,57 +158,6 @@
           {
             "name": "Ships From",
             "value": "China Mainland"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "gid://shopify/Product/7872819986491",
-    "handle": "5pcs-bio-collagen-face-mask-deep-moisturizing-hydrating-overnight-hydrogel-facial-mask-vc-whitening-anti-aging-skincare",
-    "title": "Lamsa Bio-Collagen Overnight Hydrogel Mask – 5pcs",
-    "productType": "Face Mask",
-    "tags": [
-      "collagen",
-      "face mask",
-      "hydrating",
-      "hydrogel",
-      "skincare"
-    ],
-    "descriptionHtml": "<h3>Overnight Hydration &amp; Glow ✨</h3>\n<p>The Lamsa Bio-Collagen Overnight Hydrogel Mask deeply hydrates while you sleep, leaving skin firmer, brighter, and visibly smoother by morning.</p>\n<ul>\n<li>💧 Deep hydration — nourishes and conditions skin overnight</li>\n<li>✨ Reduces fine lines — boosts collagen for firmer, elastic skin</li>\n<li>🌟 Brightens &amp; evens tone — fades dark spots and hyperpigmentation</li>\n<li>🧖 Relaxing pamper session — rejuvenates skin and mind</li>\n<li>📦 Pack of 5 — a full week of overnight treatments</li>\n</ul>\n<p><strong>Shipping:</strong> Fast delivery across the UAE.</p>",
-    "images": [
-      {
-        "url": "https://cdn.shopify.com/s/files/1/0696/4523/8331/files/5pcs-bio-collagen-face-mask-deep-moistur-0.jpg?v=1792002798",
-        "altText": "",
-        "width": 1200,
-        "height": 1200
-      }
-    ],
-    "options": [
-      {
-        "name": "Color",
-        "values": [
-          "5pcs"
-        ]
-      }
-    ],
-    "variants": [
-      {
-        "id": "gid://shopify/ProductVariant/44193250246715",
-        "title": "5pcs",
-        "availableForSale": true,
-        "price": {
-          "amount": "53.0",
-          "currencyCode": "AED"
-        },
-        "compareAtPrice": {
-          "amount": "25.0",
-          "currencyCode": "AED"
-        },
-        "selectedOptions": [
-          {
-            "name": "Color",
-            "value": "5pcs"
           }
         ]
       }
@@ -428,7 +383,7 @@
         "title": "Standard",
         "availableForSale": true,
         "price": {
-          "amount": "206.0",
+          "amount": "487.0",
           "currencyCode": "AED"
         },
         "compareAtPrice": {
@@ -721,12 +676,6 @@
     ],
     "options": [
       {
-        "name": "NET WT",
-        "values": [
-          "PDRN PINK"
-        ]
-      },
-      {
         "name": "Color",
         "values": [
           "PDRN PINK"
@@ -742,7 +691,7 @@
     "variants": [
       {
         "id": "gid://shopify/ProductVariant/44193302675515",
-        "title": "PDRN PINK / PDRN PINK / 30ml",
+        "title": "PDRN PINK / 30ml",
         "availableForSale": true,
         "price": {
           "amount": "38.0",
@@ -753,10 +702,6 @@
           "currencyCode": "AED"
         },
         "selectedOptions": [
-          {
-            "name": "NET WT",
-            "value": "PDRN PINK"
-          },
           {
             "name": "Color",
             "value": "PDRN PINK"
@@ -1492,71 +1437,88 @@
     ]
   },
   {
-    "id": "gid://shopify/Product/7875197829179",
-    "handle": "hyaluronic-acid-face-serum-essence-skin-repair-rejuvenation-firming-moisturizing-hydrating-anti-aging",
-    "title": "Hyaluronic Acid Face Serum Essence Skin Repair Rejuvenation Firming Moisturizing Hydrating Anti Aging",
-    "productType": "",
+    "id": "gid://shopify/Product/8008182792251",
+    "handle": "20-30g-lip-skin-care-products-moisturizing-lip",
+    "title": "20-30g Lip Skin Care Products Moisturizing Lip",
+    "productType": "Skin care",
     "tags": [],
-    "descriptionHtml": "<h1>SPECIFICATIONS</h1><p><span>Brand Name</span>: <span style=\"color:#333\">NONE</span></p><p><span>Choice</span>: <span style=\"color:#333\">yes</span></p><p><span>Feature</span>: <span style=\"color:#333\">Moisturizing</span></p><p><span>Formulation</span>: <span style=\"color:#333\">Liquid</span></p><p><span>Gender</span>: <span style=\"color:#333\">Unisex</span></p><p><span>High-concerned chemical</span>: <span style=\"color:#333\">none</span></p><p><span>Item Type</span>: <span style=\"color:#333\">face serum</span></p><p><span>Number of Pieces</span>: <span style=\"color:#333\">One Unit</span></p><p><span>Origin</span>: <span style=\"color:#333\">Mainland China</span></p><p><span>Period After Opening</span>: <span style=\"color:#333\">3 months</span></p><div class=\"detailmodule_html\"><div class=\"detail-desc-decorate-richtext\">\n<div class=\"ai-description\"><div class=\"origin-part box-sizing\">\n<p style='font-family:\"Open Sans\", sans-serif;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(0, 0, 0);background-color:rgb(255, 255, 255);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box' align=\"start\"><span style=\"background-color:rgb(255, 255, 255)\"><strong>• Hyaluronic Acid Formulation :</strong></span><span style=\"background-color:rgb(255, 255, 255)\">The serum is formulated with hyaluronic acid, a naturally occurring substance in the skin that helps retain moisture and promote skin health.</span></p>\n<p><br></p>\n<p style='font-family:\"Open Sans\", sans-serif;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(0, 0, 0);background-color:rgb(255, 255, 255);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box' align=\"start\"><span style=\"background-color:rgb(255, 255, 255)\"><strong>• Skin Repair &amp; Rejuvenation :</strong></span><span style=\"background-color:rgb(255, 255, 255)\">This face serumessence acts as a skin repair tool, enhancing skin's natural rejuvenation process and leaving the skin firmer and more youthful.</span></p>\n<p><br></p>\n<p style='font-family:\"Open Sans\", sans-serif;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(0, 0, 0);background-color:rgb(255, 255, 255);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box' align=\"start\"><span style=\"background-color:rgb(255, 255, 255)\"><strong>• Moisturizing Feature :</strong></span><span style=\"background-color:rgb(255, 255, 255)\">The product boasts a moisturizing feature, providing long-lasting hydration to your skin, reducing the appearance of fine lines and wrinkles.</span></p>\n<p><br></p>\n<p style='font-family:\"Open Sans\", sans-serif;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(0, 0, 0);background-color:rgb(255, 255, 255);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box' align=\"start\"><span style=\"background-color:rgb(255, 255, 255)\"><strong>• Unisex Use :</strong></span><span style=\"background-color:rgb(255, 255, 255)\">This face serum is suitable for both men and women, making it a versatile addition to any skincare routine.</span></p>\n<p><br></p>\n<p style='font-family:\"Open Sans\", sans-serif;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(0, 0, 0);background-color:rgb(255, 255, 255);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box' align=\"start\"><span style=\"background-color:rgb(255, 255, 255)\"><strong>• Easy Application :</strong></span><span style=\"background-color:rgb(255, 255, 255)\">The liquid formulation allows for easy application, ensuring the product is absorbed evenly into the skin for maximum benefit.</span></p>\n<p><br></p>\n<p style='font-family:\"Open Sans\", sans-serif;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(0, 0, 0);background-color:rgb(255, 255, 255);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box' align=\"start\"><span style=\"background-color:rgb(255, 255, 255)\"><strong>• Anti-Aging Effect :</strong></span><span style=\"background-color:rgb(255, 255, 255)\">Regular use of this face serum may help reduce the appearance of age lines and wrinkles, leaving your skin looking youthful and vibrant.</span></p>\n<p><br></p>\n</div></div>\n<p><strong><span style=\"font-size:20px\">Hyaluronic Acid Face Serum Essence Skin Repair Rejuvenation Firming Moisturizing Hydrating Anti Aging</span></strong></p>\n<p><br></p>\n<p><span style=\"font-size:16px\">one box / 10pcs ,5ml/pc</span></p>\n<p><br></p>\n<p><img src=\"https://ae01.alicdn.com/kf/S6ac2ebd06d2441658fb0a475609c9b55m.jpg\" slate-data-type=\"image\"><img src=\"https://ae01.alicdn.com/kf/Sd9446a8f678748b1a36583e1e3d80088s.jpg\" slate-data-type=\"image\"></p>\n<p style=\"font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(0, 0, 0);background-color:rgb(255, 255, 255);border:0px;margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box\" align=\"start\"><strong><span style=\"background-color:rgb(211, 49, 21);color:rgb(0, 0, 0);font-size:26px;font-family:inherit\">Include 20% Smallmoleculeof hyaluronicacid</span></strong></p>\n<p style=\"font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(0, 0, 0);background-color:rgb(255, 255, 255);border:0px;margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box\" align=\"start\"><br></p>\n<p style=\"font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(0, 0, 0);background-color:rgb(255, 255, 255);border:0px;margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box\" align=\"start\"><span style=\"background-color:rgb(255, 255, 255);color:rgb(159, 5, 0);font-size:22px;font-family:arial, helvetica, sans-serif\"><strong>(Small molecules are easy to absorb)</strong></span></p>\n<p style=\"font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(0, 0, 0);background-color:rgb(255, 255, 255);border:0px;margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box\" align=\"start\"><br></p>\n<p style=\"font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(0, 0, 0);background-color:rgb(255, 255, 255);border:0px;margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box\" align=\"start\"><span style=\"background-color:rgb(255, 255, 255);color:rgb(159, 5, 0);font-size:20px;font-family:arial, helvetica, sans-serif\"><strong>Composition and function of hyaluronic acid</strong></span></p>\n<p style=\"font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(0, 0, 0);background-color:rgb(255, 255, 255);border:0px;margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box\" align=\"start\"><span style=\"background-color:rgb(255, 255, 255);color:rgb(159, 5, 0);font-size:18px;font-family:arial, helvetica, sans-serif\">Aqua-- Solvent</span></p>\n<p style=\"font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(0, 0, 0);background-color:rgb(255, 255, 255);border:0px;margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box\" align=\"start\"><span style=\"background-color:rgb(255, 255, 255);color:rgb(159, 5, 0);font-size:18px;font-family:arial, helvetica, sans-serif\">Hyaluronic acid--Moisturizing</span></p>\n<p style=\"font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(0, 0, 0);background-color:rgb(255, 255, 255);border:0px;margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box\" align=\"start\"><span style=\"background-color:rgb(255, 255, 255);color:rgb(159, 5, 0);font-size:18px;font-family:arial, helvetica, sans-serif\">Lilium japonicum extract-- Anti-inflammatory,antioxidation</span></p>\n<p style=\"font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(0, 0, 0);background-color:rgb(255, 255, 255);border:0px;margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box\" align=\"start\"><span style=\"background-color:rgb(255, 255, 255);color:rgb(159, 5, 0);font-size:18px;font-family:arial, helvetica, sans-serif\">Tremella fuciforms extrat-- Moisturizing</span></p>\n<p style=\"font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(0, 0, 0);background-color:rgb(255, 255, 255);border:0px;margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box\" align=\"start\"><span style=\"background-color:rgb(255, 255, 255);color:rgb(159, 5, 0);font-size:18px;font-family:arial, helvetica, sans-serif\">Dextran-- Moisturizing,repair skin</span></p>\n<p style=\"font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(0, 0, 0);background-color:rgb(255, 255, 255);border:0px;margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box\" align=\"start\"><span style=\"background-color:rgb(255, 255, 255);color:rgb(159, 5, 0);font-size:18px;font-family:arial, helvetica, sans-serif\">Alpinia speciosa leaf extract -- anti-aging</span></p>\n<p style=\"font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(0, 0, 0);background-color:rgb(255, 255, 255);border:0px;margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box\" align=\"start\"><span style=\"background-color:rgb(255, 255, 255);color:rgb(159, 5, 0);font-size:18px;font-family:arial, helvetica, sans-serif\">Hydrolyzed sericin-- Anti aging and firming</span></p>\n<p style=\"font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(0, 0, 0);background-color:rgb(255, 255, 255);border:0px;margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box\" align=\"start\"><span style=\"background-color:rgb(255, 255, 255);color:rgb(159, 5, 0);font-size:18px;font-family:arial, helvetica, sans-serif\">Glycerin--Hydrating; Moisturizing</span></p>\n<p style=\"font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(0, 0, 0);background-color:rgb(255, 255, 255);border:0px;margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box\" align=\"start\"><span style=\"background-color:rgb(255, 255, 255);color:rgb(159, 5, 0);font-size:18px;font-family:arial, helvetica, sans-serif\">Glyceryl glucoside-- Moisturizing</span></p>\n<p style=\"font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(0, 0, 0);background-color:rgb(255, 255, 255);border:0px;margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box\" align=\"start\"><span style=\"background-color:rgb(255, 255, 255);color:rgb(159, 5, 0);font-size:18px;font-family:arial, helvetica, sans-serif\">Pentavin-- Moisturizing</span></p>\n<p style=\"font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(0, 0, 0);background-color:rgb(255, 255, 255);border:0px;margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box\" align=\"start\"><span style=\"background-color:rgb(255, 255, 255);color:rgb(159, 5, 0);font-size:18px;font-family:arial, helvetica, sans-serif\">Cabomer-- Thickening</span></p>\n<p><br></p>\n<p><img src=\"https://ae01.alicdn.com/kf/S4454c0fd43844f16821d67560ff61374r.jpg\" slate-data-type=\"image\"><img src=\"https://ae01.alicdn.com/kf/S2922818a234d4c4db2d7c7539455a1bct.jpg\" slate-data-type=\"image\"><img src=\"https://ae01.alicdn.com/kf/Sff8ebb040e0548e5b5751d03d9dd7891z.jpg\" slate-data-type=\"image\"><img src=\"https://ae01.alicdn.com/kf/Saf9406508a6b4fb1ba1b183db14d4185D.jpg\" slate-data-type=\"image\"></p>\n<p><br></p>\n<p><br></p>\n</div></div><p><br></p>",
+    "descriptionHtml": "<p>\n <b>Overview:</b>\n <br>\n Unique design, stylish and beautiful.\n <br>\n Good material, comfortable use.\n <br>\n <b>\n  <br>\n </b>\n</p>\n<p>\n <b>Product information:</b>\n</p>\n<p>\n Net content: 20-30g\n <br>\n Main effect: Supplement the moisture and nutrition required by the skin of the lips, improve the dryness of the skin\n <br>\n Dryness and roughness, moisturizing and moisturizing, soothing and nourishing the skin,\n <br>\n Leaves lips delicate, hydrated and shiny.\n <br>\n Applicable skin: suitable for all skin types\n</p>\n<p>\n <b>Package Content:</b>\n <br>\n</p>\n<p>\n Lip box* 1\n <br>\n <br>\n <br>\n <b>Product Image:</b>\n</p>\n<p>\n <br>\n</p>\n<p>\n <img src=\"https://frontend-cf.cjdropshipping.com/resources/common/image_error.svg\" style=\"max-width: 100%; width: 0px; height: 0px; object-fit: scale-down; object-position: center center; background-color: rgb(245, 245, 245);\" contenteditable=\"false\" data-original=\"https://oss-cf.cjdropshipping.com/product/2024/12/31/04/7e45fd2d-f344-4516-b81e-ac27b9d5311d.jpg\">\n <br>\n <img src=\"https://oss-cf.cjdropshipping.com/product/2024/12/31/04/456ba220-f84c-4b64-b10e-458a8c008099.jpg\" style=\"max-width:100%;\" contenteditable=\"false\">\n</p>\n<p>\n <img src=\"https://cf.cjdropshipping.com/17158176/2405160900330322800.jpg\">\n <br>\n</p>\n<p>\n <img src=\"https://cf.cjdropshipping.com/17158176/2405160900330323100.jpg\">\n <br>\n</p>",
     "images": [
       {
-        "url": "https://cdn.shopify.com/s/files/1/0696/4523/8331/files/hyaluronic-acid-face-serum-essence-skin-0.jpg?v=1792002801",
-        "altText": "",
-        "width": 1200,
-        "height": 1200
+        "url": "https://cdn.shopify.com/s/files/1/0696/4523/8331/files/328835658519.jpg?v=1792050256",
+        "altText": "89d591f22b1ff39e42e0ea9303be1246",
+        "width": 800,
+        "height": 800
       },
       {
-        "url": "https://cdn.shopify.com/s/files/1/0696/4523/8331/files/hyaluronic-acid-face-serum-essence-skin-1.jpg?v=1792002801",
-        "altText": "",
-        "width": 1200,
-        "height": 1200
+        "url": "https://cdn.shopify.com/s/files/1/0696/4523/8331/files/734358009607.jpg?v=1792050256",
+        "altText": "76f10037fbb5f558980631fa58a94563",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0696/4523/8331/files/4686491452476.jpg?v=1792050256",
+        "altText": "44d20d111d16c32dda33bc573176cf14",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0696/4523/8331/files/b33c72fb-aaae-4861-9628-90a38303640e.jpg?v=1792050257",
+        "altText": "50ece41c2b7174196d0f46ad58b3a1e1",
+        "width": 1920,
+        "height": 2560
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0696/4523/8331/files/1611193743387.jpg?v=1792050256",
+        "altText": "624e3206da5de88ab6f6aac04e794293",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0696/4523/8331/files/6681887f-174f-4605-a941-6b29607868d2.jpg?v=1792050256",
+        "altText": "33759ecc997f21b061356120132456bc",
+        "width": 630,
+        "height": 723
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0696/4523/8331/files/4b28910b-72c7-4cba-b4fc-1d22481a7e0d.jpg?v=1792050256",
+        "altText": "36f78485229190f1c59e3e29f1ccf1ba",
+        "width": 519,
+        "height": 531
       }
     ],
     "options": [
       {
-        "name": "NET WT",
+        "name": "style",
         "values": [
-          "50ml",
-          "10ml"
+          "20g"
+        ]
+      },
+      {
+        "name": "Color",
+        "values": [
+          "Boxed lip mask"
         ]
       }
     ],
     "variants": [
       {
-        "id": "gid://shopify/ProductVariant/44206014365755",
-        "title": "50ml",
+        "id": "gid://shopify/ProductVariant/44511503351867",
+        "title": "20g / Boxed lip mask",
         "availableForSale": true,
         "price": {
-          "amount": "64.0",
+          "amount": "75.0",
           "currencyCode": "AED"
         },
-        "compareAtPrice": {
-          "amount": "61.0",
-          "currencyCode": "AED"
-        },
+        "compareAtPrice": null,
         "selectedOptions": [
           {
-            "name": "NET WT",
-            "value": "50ml"
-          }
-        ]
-      },
-      {
-        "id": "gid://shopify/ProductVariant/44206014398523",
-        "title": "10ml",
-        "availableForSale": true,
-        "price": {
-          "amount": "12.0",
-          "currencyCode": "AED"
-        },
-        "compareAtPrice": {
-          "amount": "9.0",
-          "currencyCode": "AED"
-        },
-        "selectedOptions": [
+            "name": "style",
+            "value": "20g"
+          },
           {
-            "name": "NET WT",
-            "value": "10ml"
+            "name": "Color",
+            "value": "Boxed lip mask"
           }
         ]
       }

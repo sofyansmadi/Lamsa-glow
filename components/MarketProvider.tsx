@@ -1,8 +1,8 @@
 "use client";
 
 // Picks the shopper's country (detected by Cloudflare, or chosen by her) and loads prices in that
-// country's currency from Shopify. Only countries enabled in Shopify Markets are offered; until more
-// are enabled, everything stays in the store's default market and the baked-in prices are shown.
+// country's currency from Shopify. Only countries enabled in Shopify Markets are offered. Prices are
+// always fetched live, so a change in Shopify shows up straight away; baked-in prices are only a fallback.
 import { createContext, useCallback, useContext, useEffect, useState } from "react";
 import { API_VERSION, storeDomain, storefrontToken, isLive, type Money } from "@/lib/shopify";
 
@@ -61,14 +61,15 @@ export function MarketProvider({ children }: { children: React.ReactNode }) {
         const list = d.localization.availableCountries.map((c) => ({ isoCode: c.isoCode, currency: c.currency.isoCode }));
         setCountries(list);
         const has = (iso: string | null) => !!iso && list.some((c) => c.isoCode === iso);
-        setCountryState(has(wanted) ? wanted! : has(DEFAULT_COUNTRY) ? DEFAULT_COUNTRY : list[0]?.isoCode ?? DEFAULT_COUNTRY);
+        // Shoppers from a country Shopify doesn't sell to yet see US dollars rather than the default market's currency.
+        setCountryState(has(wanted) ? wanted! : has("US") ? "US" : has(DEFAULT_COUNTRY) ? DEFAULT_COUNTRY : list[0]?.isoCode ?? DEFAULT_COUNTRY);
       })
       .catch(() => {});
   }, []);
 
-  // Prices baked into the pages are for the default market; fetch the rest live.
+  // Always fetch current prices: the pages are rebuilt only when the catalog sync runs.
   useEffect(() => {
-    if (!isLive || country === DEFAULT_COUNTRY) { setPrices(null); return; }
+    if (!isLive) { setPrices(null); return; }
     let live = true;
     storefront<{ products: { nodes: { variants: { nodes: ({ id: string } & LivePrice)[] } }[] } }>(
       `query @inContext(country: ${country}) { products(first: 100) { nodes { variants(first: 50) { nodes {
