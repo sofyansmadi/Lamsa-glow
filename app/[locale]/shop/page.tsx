@@ -17,13 +17,12 @@ export default async function Shop({ params }: { params: Promise<{ locale: strin
   if (!isLocale(locale)) notFound();
   const d = t(locale);
   const products = await getProducts();
-  const cards = Object.fromEntries(products.map((p) => [p.handle, <ProductCard key={p.handle} product={p} locale={locale} />]));
   return (
     <section className="section">
       <div className="wrap">
         <div className="section-head"><h1 style={{ fontSize: "var(--step-3)" }}>{d.shopTitle}</h1></div>
-        <Suspense fallback={<div className="grid">{Object.values(cards)}</div>}>
-          <ShopGrid products={products} locale={locale} cards={cards} />
+        <Suspense fallback={<div className="grid">{products.map((p) => <ProductCard key={p.handle} product={p} locale={locale} />)}</div>}>
+          <ShopGrid products={products} locale={locale} />
         </Suspense>
       </div>
     </section>

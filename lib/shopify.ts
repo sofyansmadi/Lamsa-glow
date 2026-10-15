@@ -47,7 +47,7 @@ export async function storefront<T>(query: string, variables: Record<string, unk
   return json.data as T;
 }
 
-const PRODUCT_FIELDS = `
+export const PRODUCT_FIELDS = `
   id handle title productType tags descriptionHtml
   images(first: 8) { nodes { url altText width height } }
   options { name values }
@@ -108,3 +108,20 @@ export const minPrice = (p: Product) =>
 /** Only show a "was" price when it really is higher than the current one. */
 export const realCompareAt = (v: Variant) =>
   v.compareAtPrice && Number(v.compareAtPrice.amount) > Number(v.price.amount) ? v.compareAtPrice : null;
+
+/** Browser-side: the current catalog straight from Shopify (no build needed). */
+export async function fetchLiveProducts(): Promise<Product[]> {
+  const d = await storefront<{ products: { nodes: RawProduct[] } }>(
+    `query Products @inContext(country: AE) { products(first: 100, sortKey: CREATED_AT) { nodes { ${PRODUCT_FIELDS} } } }`
+  );
+  return d.products.nodes.map(normalize);
+}
+
+/** Browser-side: one product straight from Shopify. */
+export async function fetchLiveProduct(handle: string): Promise<Product | null> {
+  const d = await storefront<{ product: RawProduct | null }>(
+    `query Product($handle: String!) @inContext(country: AE) { product(handle: $handle) { ${PRODUCT_FIELDS} } }`,
+    { handle }
+  );
+  return d.product ? normalize(d.product) : null;
+}

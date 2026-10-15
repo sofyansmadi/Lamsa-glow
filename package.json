@@ -6,6 +6,7 @@
     "dev": "next dev",
     "prebuild": "rm -rf .next/cache/fetch-cache",
     "build": "next build",
+    "postbuild": "node scripts/patch-404.mjs",
     "start": "next start"
   },
   "keywords": [],

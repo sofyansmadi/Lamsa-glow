@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { getProduct, getProducts, sized } from "@/lib/shopify";
 import { isLocale, locales } from "@/lib/i18n";
 import { copyFor } from "@/lib/content";
-import ProductView from "@/components/ProductView";
+import LiveProduct from "@/components/LiveProduct";
 
 
 export async function generateStaticParams() {
@@ -29,10 +29,9 @@ export default async function ProductPage({ params }: { params: Promise<{ locale
   if (!isLocale(locale)) notFound();
   const product = await getProduct(handle);
   if (!product) notFound();
-  const c = copyFor(handle, locale);
   return (
     <div className="wrap">
-      <ProductView product={product} copy={c ? { name: c.name, blurb: c.blurb, points: c.points } : null} locale={locale} />
+      <LiveProduct handle={handle} initial={product} locale={locale} />
     </div>
   );
 }
