@@ -143,7 +143,7 @@
           "currencyCode": "AED"
         },
         "compareAtPrice": {
-          "amount": "2698.0",
+          "amount": "1199.0",
           "currencyCode": "AED"
         },
         "selectedOptions": [
@@ -1519,6 +1519,580 @@
           {
             "name": "Color",
             "value": "Boxed lip mask"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gid://shopify/Product/8008238956603",
+    "handle": "household-whole-body-electric-hair-removal-equipment",
+    "title": "Household Whole Body Electric Hair Removal Equipment",
+    "productType": "Beauty Device",
+    "tags": [
+      "beauty device",
+      "hair removal"
+    ],
+    "descriptionHtml": "<p>\n Hair removal IPL for home use\n <br>\n <br>\n Lamp tube Xenon quartz ray tube\n <br>\n Lights Intense Pulsed light\n <br>\n Energy frequency 1.5~3.9J/cm2\n <br>\n Focus size 33×10mm2\n <br>\n Wavelength &gt;470nm\n <br>\n Lamp life ≧300000 times\n <br>\n Adaptor 100~240V AC input@12V 3A DC output\n <br>\n Working temperature 5℃~30℃\n <br>\n Working humidity Relative humidity 30%~60%\n <br>\n Net Weight 186g\n <br>\n Size 134*83*48.5mm\n <br>\n</p>\n<p>\n <span style=\"font-size: 14px;\">Packing size: 22.5*8.5*14.5 GW：780g/piece</span>\n <br>\n</p>\n<p>\n <img src=\"https://cf.cjdropshipping.com/9fa40a30-9d0c-4956-8029-e2f9ab58dbf6.jpg\" style=\"max-width:100%;\">\n <img src=\"https://cf.cjdropshipping.com/62a298bf-cb30-400f-8df4-adbfc1a2f780.jpg\" style=\"max-width:100%;\">\n <img src=\"https://cf.cjdropshipping.com/7dcb810a-3ae2-43df-b060-6280f143726e.png\" style=\"max-width:100%;\">\n <img src=\"https://cf.cjdropshipping.com/a9cd86c7-8c58-4c5e-a9b5-854a3ebb98c6.jpg\" style=\"max-width:100%;\">\n <img src=\"https://cf.cjdropshipping.com/7667f83e-2ccf-4614-aec0-65ccd7108300.png\" style=\"max-width:100%;\">\n <img src=\"https://cf.cjdropshipping.com/0af9ece2-76c6-48d3-b8f1-340ef8f476d6.jpg\" style=\"max-width:100%;\">\n <img src=\"https://cf.cjdropshipping.com/efa3994c-8cce-4a85-bc98-d43770b4c6d6.png\" style=\"max-width:100%;\">\n <img src=\"https://cf.cjdropshipping.com/09382cbc-d4b9-4d9c-bc95-cdedcfa6bca7.png\" style=\"max-width:100%;\">\n <img src=\"https://cf.cjdropshipping.com/581fbf16-a173-4f0e-a6cb-f89b847c7921.png\" style=\"max-width:100%;\">\n <img src=\"https://cf.cjdropshipping.com/16665dfe-3768-42c8-b006-628a82cc9a91.png\" style=\"max-width:100%;\">\n <img src=\"https://cf.cjdropshipping.com/4a9c2ddc-ada2-429f-9fe3-ab456431b2dd.jpg\" style=\"max-width:100%;\">\n <br>\n <br>\n</p>\n<br>\n<br>",
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0696/4523/8331/files/193343413222.jpg?v=1792051181",
+        "altText": "79c52869ad70810fa87cf6e6edcd27f1",
+        "width": 770,
+        "height": 879
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0696/4523/8331/files/2239314664538.jpg?v=1792051181",
+        "altText": "be61be7650c71b6bed78ffa1da9d247e",
+        "width": 659,
+        "height": 471
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0696/4523/8331/files/303517949989.jpg?v=1792051181",
+        "altText": "352c9b4de677a84d9923e7264e0d17d4",
+        "width": 715,
+        "height": 732
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0696/4523/8331/files/1388292509472.jpg?v=1792051181",
+        "altText": "e51078ce2ac806a8e0359b0008500496",
+        "width": 583,
+        "height": 422
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0696/4523/8331/files/1099998615301.jpg?v=1792051181",
+        "altText": "3f7ac2233d7df33e71dc98f5f5a143d8",
+        "width": 800,
+        "height": 801
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0696/4523/8331/files/168473063643.jpg?v=1792051181",
+        "altText": "bcc7b96de517e7f2667aeddf19657b3f",
+        "width": 796,
+        "height": 790
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0696/4523/8331/files/38471843855140.jpg?v=1792051181",
+        "altText": "b679854a77a910b2ec9006f07153ea99",
+        "width": 762,
+        "height": 586
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0696/4523/8331/files/1892820442458.jpg?v=1792051181",
+        "altText": "7574bdb0f4284b4f8ac1d0e00f02f296",
+        "width": 765,
+        "height": 807
+      }
+    ],
+    "options": [
+      {
+        "name": "Color",
+        "values": [
+          "Pink Set",
+          "Pink",
+          "White Set",
+          "White with brand",
+          "White",
+          "Black Set"
+        ]
+      },
+      {
+        "name": "style",
+        "values": [
+          "EU",
+          "UK",
+          "US",
+          "Eu",
+          "Us",
+          "AU"
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "id": "gid://shopify/ProductVariant/44511674794043",
+        "title": "Black Set / AU",
+        "availableForSale": true,
+        "price": {
+          "amount": "338.0",
+          "currencyCode": "AED"
+        },
+        "compareAtPrice": null,
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "Black Set"
+          },
+          {
+            "name": "style",
+            "value": "AU"
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/ProductVariant/44511674826811",
+        "title": "Black Set / EU",
+        "availableForSale": true,
+        "price": {
+          "amount": "338.0",
+          "currencyCode": "AED"
+        },
+        "compareAtPrice": null,
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "Black Set"
+          },
+          {
+            "name": "style",
+            "value": "EU"
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/ProductVariant/44511674859579",
+        "title": "Black Set / UK",
+        "availableForSale": true,
+        "price": {
+          "amount": "338.0",
+          "currencyCode": "AED"
+        },
+        "compareAtPrice": null,
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "Black Set"
+          },
+          {
+            "name": "style",
+            "value": "UK"
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/ProductVariant/44511674892347",
+        "title": "Black Set / US",
+        "availableForSale": true,
+        "price": {
+          "amount": "338.0",
+          "currencyCode": "AED"
+        },
+        "compareAtPrice": null,
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "Black Set"
+          },
+          {
+            "name": "style",
+            "value": "US"
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/ProductVariant/44511674925115",
+        "title": "Pink Set / AU",
+        "availableForSale": true,
+        "price": {
+          "amount": "338.0",
+          "currencyCode": "AED"
+        },
+        "compareAtPrice": null,
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "Pink Set"
+          },
+          {
+            "name": "style",
+            "value": "AU"
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/ProductVariant/44511674957883",
+        "title": "Pink Set / EU",
+        "availableForSale": true,
+        "price": {
+          "amount": "338.0",
+          "currencyCode": "AED"
+        },
+        "compareAtPrice": null,
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "Pink Set"
+          },
+          {
+            "name": "style",
+            "value": "EU"
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/ProductVariant/44511674990651",
+        "title": "Pink Set / UK",
+        "availableForSale": true,
+        "price": {
+          "amount": "338.0",
+          "currencyCode": "AED"
+        },
+        "compareAtPrice": null,
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "Pink Set"
+          },
+          {
+            "name": "style",
+            "value": "UK"
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/ProductVariant/44511675023419",
+        "title": "Pink Set / US",
+        "availableForSale": true,
+        "price": {
+          "amount": "338.0",
+          "currencyCode": "AED"
+        },
+        "compareAtPrice": null,
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "Pink Set"
+          },
+          {
+            "name": "style",
+            "value": "US"
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/ProductVariant/44511675056187",
+        "title": "Pink / AU",
+        "availableForSale": true,
+        "price": {
+          "amount": "338.0",
+          "currencyCode": "AED"
+        },
+        "compareAtPrice": null,
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "Pink"
+          },
+          {
+            "name": "style",
+            "value": "AU"
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/ProductVariant/44511675088955",
+        "title": "Pink / Eu",
+        "availableForSale": true,
+        "price": {
+          "amount": "338.0",
+          "currencyCode": "AED"
+        },
+        "compareAtPrice": null,
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "Pink"
+          },
+          {
+            "name": "style",
+            "value": "Eu"
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/ProductVariant/44511675121723",
+        "title": "Pink / UK",
+        "availableForSale": true,
+        "price": {
+          "amount": "338.0",
+          "currencyCode": "AED"
+        },
+        "compareAtPrice": null,
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "Pink"
+          },
+          {
+            "name": "style",
+            "value": "UK"
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/ProductVariant/44511675154491",
+        "title": "Pink / Us",
+        "availableForSale": true,
+        "price": {
+          "amount": "338.0",
+          "currencyCode": "AED"
+        },
+        "compareAtPrice": null,
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "Pink"
+          },
+          {
+            "name": "style",
+            "value": "Us"
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/ProductVariant/44511675187259",
+        "title": "White Set / AU",
+        "availableForSale": true,
+        "price": {
+          "amount": "338.0",
+          "currencyCode": "AED"
+        },
+        "compareAtPrice": null,
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "White Set"
+          },
+          {
+            "name": "style",
+            "value": "AU"
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/ProductVariant/44511675220027",
+        "title": "White Set / EU",
+        "availableForSale": true,
+        "price": {
+          "amount": "338.0",
+          "currencyCode": "AED"
+        },
+        "compareAtPrice": null,
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "White Set"
+          },
+          {
+            "name": "style",
+            "value": "EU"
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/ProductVariant/44511675252795",
+        "title": "White Set / UK",
+        "availableForSale": true,
+        "price": {
+          "amount": "338.0",
+          "currencyCode": "AED"
+        },
+        "compareAtPrice": null,
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "White Set"
+          },
+          {
+            "name": "style",
+            "value": "UK"
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/ProductVariant/44511675285563",
+        "title": "White Set / US",
+        "availableForSale": true,
+        "price": {
+          "amount": "338.0",
+          "currencyCode": "AED"
+        },
+        "compareAtPrice": null,
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "White Set"
+          },
+          {
+            "name": "style",
+            "value": "US"
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/ProductVariant/44511675318331",
+        "title": "White with brand / EU",
+        "availableForSale": true,
+        "price": {
+          "amount": "338.0",
+          "currencyCode": "AED"
+        },
+        "compareAtPrice": null,
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "White with brand"
+          },
+          {
+            "name": "style",
+            "value": "EU"
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/ProductVariant/44511675351099",
+        "title": "White / AU",
+        "availableForSale": true,
+        "price": {
+          "amount": "338.0",
+          "currencyCode": "AED"
+        },
+        "compareAtPrice": null,
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "White"
+          },
+          {
+            "name": "style",
+            "value": "AU"
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/ProductVariant/44511675383867",
+        "title": "White / Eu",
+        "availableForSale": true,
+        "price": {
+          "amount": "338.0",
+          "currencyCode": "AED"
+        },
+        "compareAtPrice": null,
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "White"
+          },
+          {
+            "name": "style",
+            "value": "Eu"
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/ProductVariant/44511675416635",
+        "title": "White / UK",
+        "availableForSale": true,
+        "price": {
+          "amount": "338.0",
+          "currencyCode": "AED"
+        },
+        "compareAtPrice": null,
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "White"
+          },
+          {
+            "name": "style",
+            "value": "UK"
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/ProductVariant/44511675449403",
+        "title": "White / Us",
+        "availableForSale": true,
+        "price": {
+          "amount": "338.0",
+          "currencyCode": "AED"
+        },
+        "compareAtPrice": null,
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "White"
+          },
+          {
+            "name": "style",
+            "value": "Us"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gid://shopify/Product/8008281620539",
+    "handle": "anti-acne-led-mask-spectrometer",
+    "title": "Anti Acne Led Mask Spectrometer",
+    "productType": "Skin care",
+    "tags": [
+      "beauty device",
+      "face mask"
+    ],
+    "descriptionHtml": "<p>\n <b>Product information:</b>\n <br>\n</p>\n<p>\n Function; infrared, color light\n <br>\n Specifications: National Standard, American Standard, British Standard, European Standard, Australian Standard\n <br>\n Applicable scene: home\n <br>\n material: plastic\n <br>\n Weight: 1.25kg\n <br>\n Size: 24.5 cm * 24.0 cm * 17.0 cm\n</p>\n<p>\n <br>\n</p>\n<p>\n <b>Packing list:</b>\n</p>\n<p>Plastic Spectrometer*1</p>\n<p>\n <img src=\"https://cf.cjdropshipping.com/17101152/2403110213360327600.jpg\" contenteditable=\"false\" style=\"font-size: 14px; max-width: 100%;\">\n <img src=\"https://cf.cjdropshipping.com/17101152/2403110213360329800.jpg\" style=\"max-width: 100%;\">\n <br>\n</p>",
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0696/4523/8331/files/eee73e9a-6faf-4237-877a-b1c21adc7d03.jpg?v=1792051914",
+        "altText": "fe295c3b8d8e84c7d0e2a2b3f2a59882",
+        "width": 600,
+        "height": 600
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0696/4523/8331/files/e375eb5f-ff73-4984-bcb0-82bb5ac36c20.jpg?v=1792051914",
+        "altText": "4bdd642049b2d0a2fe42d8fcee346b3a",
+        "width": 1005,
+        "height": 1005
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0696/4523/8331/files/4ee4d3d1-3411-47f6-a853-6da59f6da6ca.jpg?v=1792051915",
+        "altText": "f66ad595c105601bd557db5b5afa977c",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "options": [
+      {
+        "name": "Electrical outlet",
+        "values": [
+          "UK"
+        ]
+      },
+      {
+        "name": "Color",
+        "values": [
+          "White"
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "id": "gid://shopify/ProductVariant/44511801147451",
+        "title": "UK / White",
+        "availableForSale": true,
+        "price": {
+          "amount": "450.0",
+          "currencyCode": "AED"
+        },
+        "compareAtPrice": null,
+        "selectedOptions": [
+          {
+            "name": "Electrical outlet",
+            "value": "UK"
+          },
+          {
+            "name": "Color",
+            "value": "White"
           }
         ]
       }
