@@ -4,6 +4,7 @@ import { createContext, useCallback, useContext, useEffect, useState } from "rea
 import { API_VERSION, storeDomain, storefrontToken, isLive, type Money } from "@/lib/shopify";
 import type { Locale } from "@/lib/i18n";
 import { useMarket } from "./MarketProvider";
+import { plainId, track } from "@/lib/pixel";
 
 export type CartLine = {
   id: string;
@@ -119,6 +120,15 @@ export function CartProvider({ locale, children }: { locale: Locale; children: R
           try { localStorage.setItem(KEY, next.id); } catch {}
         }
         setCart(next); setOpen(true);
+        {
+          const line = next.lines.nodes.find((l) => l.merchandise.id === variantId);
+          if (line && Number(line.cost.totalAmount.amount) > 0 && !warnings.some((w) => /STOCK|NOT_AVAILABLE|UNAVAILABLE/.test(w.code))) {
+            track("AddToCart", {
+              content_type: "product", content_ids: [plainId(variantId)], content_name: line.merchandise.product.title,
+              value: Number(line.cost.totalAmount.amount) / Math.max(line.quantity, 1) * quantity, currency: line.cost.totalAmount.currencyCode,
+            });
+          }
+        }
         if (warnings.some((w) => /STOCK|NOT_AVAILABLE|UNAVAILABLE/.test(w.code))) {
           // Shopify keeps the line at a price of 0; take it out so the bag never shows a free item.
           const dead = next.lines.nodes.filter((l) => Number(l.cost.totalAmount.amount) === 0).map((l) => l.id);

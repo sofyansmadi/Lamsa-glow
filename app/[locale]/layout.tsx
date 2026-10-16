@@ -7,6 +7,7 @@ import { MarketProvider } from "@/components/MarketProvider";
 import Header from "@/components/Header";
 import CartDrawer from "@/components/CartDrawer";
 import Footer from "@/components/Footer";
+import MetaPixel from "@/components/MetaPixel";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -36,9 +37,13 @@ export default async function LocaleLayout({ children, params }: { children: Rea
           href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;500;600;700&family=Readex+Pro:wght@300;400;500&display=swap"
         />
         <link rel="preconnect" href="https://cdn.shopify.com" />
+        {process.env.NEXT_PUBLIC_META_DOMAIN_VERIFY && (
+          <meta name="facebook-domain-verification" content={process.env.NEXT_PUBLIC_META_DOMAIN_VERIFY} />
+        )}
       </head>
       <body>
         <MarketProvider>
+        <MetaPixel />
         <CartProvider locale={locale}>
           <Header locale={locale} />
           <main>{children}</main>

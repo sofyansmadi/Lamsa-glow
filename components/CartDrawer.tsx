@@ -1,5 +1,6 @@
 "use client";
 
+import { plainId, track } from "@/lib/pixel";
 import { useEffect, useRef } from "react";
 import { useCart } from "./CartProvider";
 import { formatPrice, optionValueLabel, t, type Locale } from "@/lib/i18n";
@@ -59,7 +60,7 @@ export default function CartDrawer({ locale }: { locale: Locale }) {
               <strong>{formatPrice(cart.cost.subtotalAmount.amount, cart.cost.subtotalAmount.currencyCode, locale)}</strong>
             </div>
             <p className="note">{d.checkoutNote}</p>
-            <a className="btn btn-solid btn-block" href={`${cart.checkoutUrl}${cart.checkoutUrl.includes("?") ? "&" : "?"}locale=${locale}`}>
+            <a className="btn btn-solid btn-block" onClick={() => track("InitiateCheckout", { content_type: "product", content_ids: cart.lines.nodes.map((l) => plainId(l.merchandise.id)), num_items: cart.totalQuantity, value: Number(cart.cost.subtotalAmount.amount), currency: cart.cost.subtotalAmount.currencyCode })} href={`${cart.checkoutUrl}${cart.checkoutUrl.includes("?") ? "&" : "?"}locale=${locale}`}>
               {d.checkout}
             </a>
           </div>

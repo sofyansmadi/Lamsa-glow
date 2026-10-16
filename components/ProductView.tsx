@@ -1,6 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { plainId, track } from "@/lib/pixel";
 import { useCart } from "./CartProvider";
 import { useVariantPrice } from "./MarketProvider";
 import { formatPrice, optionLabel, optionValueLabel, t, type Locale } from "@/lib/i18n";
@@ -28,6 +29,14 @@ export default function ProductView({ product, copy, locale }: { product: Produc
   const shipsHere = live.availableForSale !== false;
   const was = realCompareAt({ ...variant, ...live });
   const img = product.images[imageIndex];
+
+  useEffect(() => {
+    track("ViewContent", {
+      content_type: "product", content_ids: [plainId(variant.id)], content_name: product.title,
+      value: Number(live.price.amount), currency: live.price.currencyCode,
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [product.id]);
 
   const availableFor = (name: string, value: string) =>
     product.variants.some(
