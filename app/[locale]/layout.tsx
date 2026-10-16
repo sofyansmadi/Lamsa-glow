@@ -8,6 +8,7 @@ import Header from "@/components/Header";
 import CartDrawer from "@/components/CartDrawer";
 import Footer from "@/components/Footer";
 import MetaPixel from "@/components/MetaPixel";
+import { SITE_URL } from "@/lib/domain";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -18,9 +19,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   if (!isLocale(locale)) return {};
   const d = t(locale);
   return {
+    metadataBase: new URL(SITE_URL),
     title: { default: `${d.brand} Glow`, template: `%s | ${d.brand} Glow` },
     description: d.heroBody,
     alternates: { languages: { ar: "/ar", en: "/en" } },
+    openGraph: { siteName: `${d.brand} Glow`, locale: locale === "ar" ? "ar_AE" : "en_AE", type: "website" },
   };
 }
 
