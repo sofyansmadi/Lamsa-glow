@@ -1614,10 +1614,13 @@
         "title": "Black Set / AU",
         "availableForSale": true,
         "price": {
-          "amount": "338.0",
+          "amount": "371.0",
           "currencyCode": "AED"
         },
-        "compareAtPrice": null,
+        "compareAtPrice": {
+          "amount": "600.0",
+          "currencyCode": "AED"
+        },
         "selectedOptions": [
           {
             "name": "Color",
@@ -1634,10 +1637,13 @@
         "title": "Black Set / EU",
         "availableForSale": true,
         "price": {
-          "amount": "338.0",
+          "amount": "371.0",
           "currencyCode": "AED"
         },
-        "compareAtPrice": null,
+        "compareAtPrice": {
+          "amount": "600.0",
+          "currencyCode": "AED"
+        },
         "selectedOptions": [
           {
             "name": "Color",
@@ -1654,10 +1660,13 @@
         "title": "Black Set / UK",
         "availableForSale": true,
         "price": {
-          "amount": "338.0",
+          "amount": "371.0",
           "currencyCode": "AED"
         },
-        "compareAtPrice": null,
+        "compareAtPrice": {
+          "amount": "600.0",
+          "currencyCode": "AED"
+        },
         "selectedOptions": [
           {
             "name": "Color",
@@ -1674,10 +1683,13 @@
         "title": "Black Set / US",
         "availableForSale": true,
         "price": {
-          "amount": "338.0",
+          "amount": "371.0",
           "currencyCode": "AED"
         },
-        "compareAtPrice": null,
+        "compareAtPrice": {
+          "amount": "600.0",
+          "currencyCode": "AED"
+        },
         "selectedOptions": [
           {
             "name": "Color",
@@ -1694,10 +1706,13 @@
         "title": "Pink Set / AU",
         "availableForSale": true,
         "price": {
-          "amount": "338.0",
+          "amount": "371.0",
           "currencyCode": "AED"
         },
-        "compareAtPrice": null,
+        "compareAtPrice": {
+          "amount": "600.0",
+          "currencyCode": "AED"
+        },
         "selectedOptions": [
           {
             "name": "Color",
@@ -1714,10 +1729,13 @@
         "title": "Pink Set / EU",
         "availableForSale": true,
         "price": {
-          "amount": "338.0",
+          "amount": "371.0",
           "currencyCode": "AED"
         },
-        "compareAtPrice": null,
+        "compareAtPrice": {
+          "amount": "600.0",
+          "currencyCode": "AED"
+        },
         "selectedOptions": [
           {
             "name": "Color",
@@ -1734,10 +1752,13 @@
         "title": "Pink Set / UK",
         "availableForSale": true,
         "price": {
-          "amount": "338.0",
+          "amount": "371.0",
           "currencyCode": "AED"
         },
-        "compareAtPrice": null,
+        "compareAtPrice": {
+          "amount": "600.0",
+          "currencyCode": "AED"
+        },
         "selectedOptions": [
           {
             "name": "Color",
@@ -1754,10 +1775,13 @@
         "title": "Pink Set / US",
         "availableForSale": true,
         "price": {
-          "amount": "338.0",
+          "amount": "371.0",
           "currencyCode": "AED"
         },
-        "compareAtPrice": null,
+        "compareAtPrice": {
+          "amount": "600.0",
+          "currencyCode": "AED"
+        },
         "selectedOptions": [
           {
             "name": "Color",
@@ -1774,10 +1798,13 @@
         "title": "Pink / AU",
         "availableForSale": true,
         "price": {
-          "amount": "338.0",
+          "amount": "371.0",
           "currencyCode": "AED"
         },
-        "compareAtPrice": null,
+        "compareAtPrice": {
+          "amount": "600.0",
+          "currencyCode": "AED"
+        },
         "selectedOptions": [
           {
             "name": "Color",
@@ -1794,10 +1821,13 @@
         "title": "Pink / Eu",
         "availableForSale": true,
         "price": {
-          "amount": "338.0",
+          "amount": "371.0",
           "currencyCode": "AED"
         },
-        "compareAtPrice": null,
+        "compareAtPrice": {
+          "amount": "600.0",
+          "currencyCode": "AED"
+        },
         "selectedOptions": [
           {
             "name": "Color",
@@ -1814,10 +1844,13 @@
         "title": "Pink / UK",
         "availableForSale": true,
         "price": {
-          "amount": "338.0",
+          "amount": "371.0",
           "currencyCode": "AED"
         },
-        "compareAtPrice": null,
+        "compareAtPrice": {
+          "amount": "600.0",
+          "currencyCode": "AED"
+        },
         "selectedOptions": [
           {
             "name": "Color",
@@ -1834,10 +1867,13 @@
         "title": "Pink / Us",
         "availableForSale": true,
         "price": {
-          "amount": "338.0",
+          "amount": "371.0",
           "currencyCode": "AED"
         },
-        "compareAtPrice": null,
+        "compareAtPrice": {
+          "amount": "600.0",
+          "currencyCode": "AED"
+        },
         "selectedOptions": [
           {
             "name": "Color",
@@ -1854,10 +1890,13 @@
         "title": "White Set / AU",
         "availableForSale": true,
         "price": {
-          "amount": "338.0",
+          "amount": "371.0",
           "currencyCode": "AED"
         },
-        "compareAtPrice": null,
+        "compareAtPrice": {
+          "amount": "600.0",
+          "currencyCode": "AED"
+        },
         "selectedOptions": [
           {
             "name": "Color",
@@ -1874,10 +1913,13 @@
         "title": "White Set / EU",
         "availableForSale": true,
         "price": {
-          "amount": "338.0",
+          "amount": "371.0",
           "currencyCode": "AED"
         },
-        "compareAtPrice": null,
+        "compareAtPrice": {
+          "amount": "600.0",
+          "currencyCode": "AED"
+        },
         "selectedOptions": [
           {
             "name": "Color",
@@ -1894,10 +1936,13 @@
         "title": "White Set / UK",
         "availableForSale": true,
         "price": {
-          "amount": "338.0",
+          "amount": "371.0",
           "currencyCode": "AED"
         },
-        "compareAtPrice": null,
+        "compareAtPrice": {
+          "amount": "600.0",
+          "currencyCode": "AED"
+        },
         "selectedOptions": [
           {
             "name": "Color",
@@ -1914,10 +1959,13 @@
         "title": "White Set / US",
         "availableForSale": true,
         "price": {
-          "amount": "338.0",
+          "amount": "371.0",
           "currencyCode": "AED"
         },
-        "compareAtPrice": null,
+        "compareAtPrice": {
+          "amount": "600.0",
+          "currencyCode": "AED"
+        },
         "selectedOptions": [
           {
             "name": "Color",
@@ -1934,10 +1982,13 @@
         "title": "White with brand / EU",
         "availableForSale": true,
         "price": {
-          "amount": "338.0",
+          "amount": "371.0",
           "currencyCode": "AED"
         },
-        "compareAtPrice": null,
+        "compareAtPrice": {
+          "amount": "600.0",
+          "currencyCode": "AED"
+        },
         "selectedOptions": [
           {
             "name": "Color",
@@ -1954,10 +2005,13 @@
         "title": "White / AU",
         "availableForSale": true,
         "price": {
-          "amount": "338.0",
+          "amount": "371.0",
           "currencyCode": "AED"
         },
-        "compareAtPrice": null,
+        "compareAtPrice": {
+          "amount": "600.0",
+          "currencyCode": "AED"
+        },
         "selectedOptions": [
           {
             "name": "Color",
@@ -1974,10 +2028,13 @@
         "title": "White / Eu",
         "availableForSale": true,
         "price": {
-          "amount": "338.0",
+          "amount": "371.0",
           "currencyCode": "AED"
         },
-        "compareAtPrice": null,
+        "compareAtPrice": {
+          "amount": "600.0",
+          "currencyCode": "AED"
+        },
         "selectedOptions": [
           {
             "name": "Color",
@@ -1994,10 +2051,13 @@
         "title": "White / UK",
         "availableForSale": true,
         "price": {
-          "amount": "338.0",
+          "amount": "371.0",
           "currencyCode": "AED"
         },
-        "compareAtPrice": null,
+        "compareAtPrice": {
+          "amount": "600.0",
+          "currencyCode": "AED"
+        },
         "selectedOptions": [
           {
             "name": "Color",
@@ -2014,10 +2074,13 @@
         "title": "White / Us",
         "availableForSale": true,
         "price": {
-          "amount": "338.0",
+          "amount": "371.0",
           "currencyCode": "AED"
         },
-        "compareAtPrice": null,
+        "compareAtPrice": {
+          "amount": "600.0",
+          "currencyCode": "AED"
+        },
         "selectedOptions": [
           {
             "name": "Color",
