@@ -15,6 +15,31 @@ export type ProductCopy = {
 };
 
 export const productCopy: Record<string, ProductCopy> = {
+  "ipl-hair-removal-laser-epilator-for-women-500-000-flash-depilator-pulses-permanent-laser-epilator-painless-hair-removal": {
+    category: "devices",
+    ar: {
+      name: "جهاز لمسة IPL لإزالة الشعر المنزلية",
+      blurb: "جهاز يعتمد الضوء النبضي المكثّف لإزالة الشعر في البيت على راحتك، للوجه والجسم.",
+      points: [
+        "500 ألف ومضة تكفي لاستخدام طويل",
+        "5 مستويات طاقة لتختاري المناسب لبشرتك",
+        "وضعان: ومضة مفردة أو ومضات متتالية",
+        "حساس أمان: يشتغل فقط عند ملامسة الجلد",
+        "للساقين، الذراعين، الإبطين، الوجه ومنطقة البكيني",
+      ],
+    },
+    en: {
+      name: "Lamsa IPL Home Hair Removal Device",
+      blurb: "An intense pulsed light device for removing hair at home, for face and body.",
+      points: [
+        "500,000 flashes for long-term use",
+        "5 energy levels to suit your skin",
+        "Two modes: single flash or continuous flash",
+        "Safety sensor: only flashes when in contact with skin",
+        "Legs, arms, underarms, face and bikini line",
+      ],
+    },
+  },
   "kodo-2026-high-end-customization-ice-laser-hair-removal-laser-epilator-permanent-ipl-painless-photoepilator-4-in-1-face-and-body": {
     category: "devices",
     ar: {
