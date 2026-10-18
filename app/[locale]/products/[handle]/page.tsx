@@ -4,6 +4,7 @@ import { getProduct, getProducts, sized } from "@/lib/shopify";
 import { isLocale, locales } from "@/lib/i18n";
 import { copyFor } from "@/lib/content";
 import LiveProduct from "@/components/LiveProduct";
+import Reviews from "@/components/Reviews";
 
 
 export async function generateStaticParams() {
@@ -32,6 +33,7 @@ export default async function ProductPage({ params }: { params: Promise<{ locale
   return (
     <div className="wrap">
       <LiveProduct handle={handle} initial={product} locale={locale} />
+      <Reviews locale={locale} product={handle} />
     </div>
   );
 }
