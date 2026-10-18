@@ -25,6 +25,7 @@ export default function Footer({ locale }: { locale: Locale }) {
           <div>
             <h3>{f.help}</h3>
             <ul>
+              <li><Link href={`/${locale}/faq`}>{d.faqLink}</Link></li>
               <li><Link href={`/${locale}/shipping`}>{f.shipping}</Link></li>
               <li><Link href={`/${locale}/returns`}>{f.returns}</Link></li>
               <li><Link href={`/${locale}/contact`}>{f.contact}</Link></li>

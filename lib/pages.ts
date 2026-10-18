@@ -94,6 +94,32 @@ export const pages: Record<string, Record<Locale, Page>> = {
       ],
     },
   },
+  faq: {
+    ar: {
+      title: "الأسئلة الشائعة",
+      blocks: [
+        { h: "كم يستغرق التوصيل؟", p: [`عادةً ${site.shippingDays.ar} من تأكيد الطلب، وتختلف المدة حسب البلد. تظهر التكلفة والمدة في صفحة الدفع قبل أن تدفعي.`] },
+        { h: "هل أستطيع تتبّع طلبي؟", p: ["نعم. نرسل لك رقم التتبّع على بريدك الإلكتروني بعد شحن الطلب."] },
+        { h: "هل الدفع آمن؟", p: ["تدفعين عبر صفحة دفع مشفّرة من Shopify. بيانات البطاقة تعالجها Shopify مباشرة ولا تصلنا."] },
+        { h: "ماذا لو وصلني المنتج تالفاً؟", p: [`راسلينا خلال ${site.returnDays} يوماً من الاستلام مع صور، وسنستبدله أو نعيد لك المبلغ. التفاصيل في صفحة الاسترجاع.`] },
+        { h: "هل الأجهزة مناسبة لكل بشرة؟", p: ["لا. أجهزة IPL والإبر الدقيقة لا تناسب كل أنواع البشرة أو الحالات الصحية. اقرئي دليل الاستخدام، وإذا كانت لديكِ حالة صحية أو كنتِ حاملاً أو تستخدمين أدوية للبشرة، استشيري طبيباً قبل الاستخدام."] },
+        { h: "هل النتائج مضمونة؟", p: ["لا نعد بنتائج محددة. تختلف النتائج من شخص لآخر حسب نوع البشرة والشعر وانتظام الاستخدام."] },
+        { h: "كيف أتواصل معكم؟", p: [`راسلينا على ${email} ونرد خلال يوم إلى يومي عمل.`] },
+      ],
+    },
+    en: {
+      title: "FAQ",
+      blocks: [
+        { h: "How long does delivery take?", p: [`Usually ${site.shippingDays.en} from confirmation; it varies by country. The cost and time are shown at checkout before you pay.`] },
+        { h: "Can I track my order?", p: ["Yes. We email you a tracking number once your order ships."] },
+        { h: "Is payment secure?", p: ["You pay on an encrypted Shopify checkout. Card details are handled directly by Shopify and never reach us."] },
+        { h: "What if my item arrives damaged?", p: [`Email us within ${site.returnDays} days of delivery with photos and we’ll replace or refund it. Details are on the Returns page.`] },
+        { h: "Are the devices suitable for every skin?", p: ["No. IPL and microneedling devices aren’t suitable for every skin type or health condition. Read the manual, and if you have a medical condition, are pregnant, or use prescription skin treatments, speak to a doctor first."] },
+        { h: "Are results guaranteed?", p: ["We don’t promise specific results. Results vary from person to person depending on skin, hair and how regularly you use the product."] },
+        { h: "How do I reach you?", p: [`Email ${email} and we’ll reply within one to two business days.`] },
+      ],
+    },
+  },
   privacy: {
     ar: {
       title: "سياسة الخصوصية",

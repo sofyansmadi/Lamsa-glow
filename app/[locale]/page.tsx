@@ -2,6 +2,8 @@ import Link from "next/link";
 import { getProducts, sized } from "@/lib/shopify";
 import { isLocale, t } from "@/lib/i18n";
 import ProductCard from "@/components/ProductCard";
+import Reviews from "@/components/Reviews";
+import Results from "@/components/Results";
 import { notFound } from "next/navigation";
 
 
@@ -92,6 +94,20 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           </div>
         </div>
       </section>
+
+      <section className="section">
+        <div className="wrap">
+          <div className="section-head"><h2>{d.howTitle}</h2></div>
+          <ol className="how">
+            {d.how.map((h, i) => (
+              <li key={h.t}><span className="how-n">{i + 1}</span><h3>{h.t}</h3><p>{h.d}</p></li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <Results locale={locale} />
+      <Reviews locale={locale} />
 
       <section className="wrap">
         <h2 className="visually-hidden">{d.whyTitle}</h2>

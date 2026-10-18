@@ -218,3 +218,27 @@ p { margin: 0; }
 .footer a:hover { color: var(--plum); text-decoration: underline; }
 .footer-legal { margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--line); font-size: .8rem; color: var(--plum-soft); line-height: 1.7; }
 @media (max-width: 760px) { .footer-grid { grid-template-columns: 1fr 1fr; } .footer-grid > :first-child { grid-column: 1 / -1; } }
+
+/* ---------- Trust, how-it-works, reviews, before/after ---------- */
+.trust-strip { list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: .85rem; color: var(--plum-soft); }
+.trust-strip li::before { content: "✓"; color: var(--petal); margin-inline-end: 6px; font-weight: 700; }
+.how { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+.how li { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 24px; }
+.how h3 { font-size: var(--step-1); margin: 12px 0 6px; }
+.how p { margin: 0; color: var(--plum-soft); }
+.how-n { display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--plum); color: var(--pearl); font-family: var(--font-display); }
+.reviews { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+.review { margin: 0; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 22px; }
+.review .stars { color: var(--gold); letter-spacing: 2px; font-size: 1.1rem; }
+.review blockquote { margin: 10px 0 12px; line-height: 1.7; }
+.review figcaption { color: var(--plum-soft); font-size: .9rem; }
+.ba-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+.ba { margin: 0; }
+.ba figcaption { margin-top: 8px; color: var(--plum-soft); font-size: .9rem; }
+.ba-stage { position: relative; aspect-ratio: 4 / 5; overflow: hidden; border-radius: var(--radius-lg); background: var(--mist); }
+.ba-stage img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.ba-before { position: absolute; inset: 0; }
+.ba-handle { position: absolute; top: 0; bottom: 0; width: 3px; background: #fff; transform: translateX(-50%); box-shadow: 0 0 0 1px rgb(0 0 0 / .15); }
+.ba-tag { position: absolute; top: 12px; padding: 4px 10px; border-radius: 999px; background: rgb(46 26 44 / .75); color: #fff; font-size: .8rem; }
+.ba-tag-l { left: 12px; } .ba-tag-r { right: 12px; }
+.ba-stage input[type="range"] { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: ew-resize; margin: 0; }

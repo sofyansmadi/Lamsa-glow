@@ -97,6 +97,7 @@ export default function ProductView({ product, copy, locale }: { product: Produc
           {!variant.availableForSale ? d.soldOut : !shipsHere ? d.notInCountry : busy ? d.adding : justAdded ? d.added : d.addToCart}
         </button>
         <p className="note">{d.shippingLine}</p>
+        <ul className="trust-strip">{d.trustStrip.map((x) => <li key={x}>{x}</li>)}</ul>
 
         {copy ? (
           <section>
