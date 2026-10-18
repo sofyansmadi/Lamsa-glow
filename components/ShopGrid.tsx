@@ -3,7 +3,8 @@
 import { useEffect, useState } from "react";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import { fetchLiveProducts, isLive, type Product } from "@/lib/shopify";
-import { productCopy, type Category } from "@/lib/content";
+import { productCopy, isJordanOnly, type Category } from "@/lib/content";
+import { useMarket } from "./MarketProvider";
 import { t, type Locale } from "@/lib/i18n";
 import ProductCard from "./ProductCard";
 
@@ -16,6 +17,7 @@ export default function ShopGrid({ products, locale }: { products: Product[]; lo
   const params = useSearchParams();
   const router = useRouter();
   const path = usePathname();
+  const { country } = useMarket();
   const [list, setList] = useState(products);
   const built = new Set(products.map((p) => p.handle));
 
@@ -26,7 +28,9 @@ export default function ShopGrid({ products, locale }: { products: Product[]; lo
 
   const raw = params.get("c");
   const active = (cats as string[]).includes(raw ?? "") ? (raw as Category) : "all";
-  const shown = list.filter((p) => active === "all" || productCopy[p.handle]?.category === active);
+  // Jordan sees only the Jordan product; everyone else never sees it.
+  const visible = list.filter((p) => (country === "JO" ? isJordanOnly(p.handle) : !isJordanOnly(p.handle)));
+  const shown = visible.filter((p) => active === "all" || productCopy[p.handle]?.category === active);
 
   return (
     <>

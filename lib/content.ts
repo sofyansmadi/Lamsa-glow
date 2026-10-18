@@ -15,6 +15,33 @@ export type ProductCopy = {
 };
 
 export const productCopy: Record<string, ProductCopy> = {
+  "babuverse-se5-ipl-hair-removal-device-jordan": {
+    category: "devices",
+    ar: {
+      name: "جهاز Babuverse SE5 لإزالة الشعر بالضوء النبضي (IPL)",
+      blurb: "جهاز منزلي يعتمد الضوء النبضي المكثّف لإزالة الشعر، متوفر داخل الأردن فقط ويوصلك لحد الباب خلال 1 إلى 3 أيام عمل. السعر 49 دينار شامل التوصيل. النتائج تختلف من شخص لآخر.",
+      points: [
+        "متوفر في الأردن فقط، والتوصيل مشمول بالسعر",
+        "التوصيل خلال 1 إلى 3 أيام عمل داخل الأردن",
+        "الدفع بالبطاقة من الموقع، أو كاش عند الاستلام عن طريق الرسائل",
+        "مستويات طاقة قابلة للضبط حسب بشرتك",
+        "يُنصح بتجربته على مساحة صغيرة قبل الاستخدام الكامل",
+        "النتائج تختلف من شخص لآخر",
+      ],
+    },
+    en: {
+      name: "Babuverse SE5 IPL Hair Removal Device",
+      blurb: "A home intense pulsed light device. Available in Jordan only, delivered to your door in 1 to 3 working days. 49 JOD, delivery included. Results vary from person to person.",
+      points: [
+        "Available in Jordan only, delivery included in the price",
+        "Delivery in 1 to 3 working days inside Jordan",
+        "Pay by card on the site, or cash on delivery by message",
+        "Adjustable energy levels to suit your skin",
+        "Test on a small area before full use",
+        "Results vary from person to person",
+      ],
+    },
+  },
   "ipl-hair-removal-laser-epilator-for-women-500-000-flash-depilator-pulses-permanent-laser-epilator-painless-hair-removal": {
     category: "devices",
     ar: {
@@ -391,3 +418,9 @@ export function copyFor(handle: string, locale: Locale) {
   const c = productCopy[handle];
   return c ? { ...c[locale], category: c.category } : null;
 }
+
+/** Products sold only to shoppers in Jordan, with the price shown in dinars (the card is charged in the store currency). */
+export const JORDAN_ONLY: Record<string, { jod: number }> = {
+  "babuverse-se5-ipl-hair-removal-device-jordan": { jod: 49 },
+};
+export const isJordanOnly = (handle: string) => handle in JORDAN_ONLY;

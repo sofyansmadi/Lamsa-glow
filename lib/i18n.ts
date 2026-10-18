@@ -16,6 +16,8 @@ const dict = {
     announce: "نشحن لكل دول العالم",
     shipTo: "البلد والعملة",
     notInCountry: "غير متوفر لبلدك حالياً",
+    jordanOnly: "متاح داخل الأردن فقط",
+    jodNote: "السعر 49 دينار شامل التوصيل. يُحاسب بالبطاقة بما يعادله بالدولار.",
     notInCountryLong: "هذا المنتج غير متوفر للشحن إلى البلد المختار حالياً. جرّبي بلداً آخر أو راسلينا.",
     heroTitle: "توهّجك على بُعد لمسة",
     heroBody:
@@ -93,6 +95,8 @@ const dict = {
     announce: "We ship worldwide",
     shipTo: "Country and currency",
     notInCountry: "Not available in your country yet",
+    jordanOnly: "Available in Jordan only",
+    jodNote: "49 JOD, delivery included. Charged by card at the equivalent in US dollars.",
     notInCountryLong: "This item can't ship to the selected country yet. Try another country or contact us.",
     heroTitle: "Your glow is one touch away",
     heroBody:

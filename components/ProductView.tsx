@@ -3,7 +3,8 @@
 import { useEffect, useMemo, useState } from "react";
 import { plainId, track } from "@/lib/pixel";
 import { useCart } from "./CartProvider";
-import { useVariantPrice } from "./MarketProvider";
+import { useVariantPrice, useMarket } from "./MarketProvider";
+import { JORDAN_ONLY } from "@/lib/content";
 import { formatPrice, optionLabel, optionValueLabel, t, type Locale } from "@/lib/i18n";
 import { realCompareAt, sized, type Product } from "@/lib/shopify";
 
@@ -25,8 +26,11 @@ export default function ProductView({ product, copy, locale }: { product: Produc
   );
   const choosable = product.options.filter((o) => o.values.length > 1);
   const live = useVariantPrice(variant);
+  const { country } = useMarket();
+  const jod = JORDAN_ONLY[product.handle]?.jod;
+  const wrongCountry = !!jod && country !== "JO";
   // In stock overall, but Shopify can't ship it to the shopper's chosen country yet.
-  const shipsHere = live.availableForSale !== false;
+  const shipsHere = live.availableForSale !== false && !wrongCountry;
   const was = realCompareAt({ ...variant, ...live });
   const img = product.images[imageIndex];
 
@@ -68,8 +72,8 @@ export default function ProductView({ product, copy, locale }: { product: Produc
       <div className="pdp-info">
         <h1>{copy?.name ?? product.title}</h1>
         <div className="price">
-          {formatPrice(live.price.amount, live.price.currencyCode, locale)}
-          {was && <s>{formatPrice(was.amount, was.currencyCode, locale)}</s>}
+          {jod ? (locale === "ar" ? `${jod} دينار` : `${jod} JOD`) : formatPrice(live.price.amount, live.price.currencyCode, locale)}
+          {!jod && was && <s>{formatPrice(was.amount, was.currencyCode, locale)}</s>}
         </div>
         {copy && <p className="blurb">{copy.blurb}</p>}
 
@@ -94,9 +98,9 @@ export default function ProductView({ product, copy, locale }: { product: Produc
         ))}
 
         <button className="btn btn-solid btn-block" disabled={!variant.availableForSale || !shipsHere || busy} onClick={onAdd}>
-          {!variant.availableForSale ? d.soldOut : !shipsHere ? d.notInCountry : busy ? d.adding : justAdded ? d.added : d.addToCart}
+          {!variant.availableForSale ? d.soldOut : !shipsHere ? (wrongCountry ? d.jordanOnly : d.notInCountry) : busy ? d.adding : justAdded ? d.added : d.addToCart}
         </button>
-        <p className="note">{d.shippingLine}</p>
+        <p className="note">{jod ? d.jodNote : d.shippingLine}</p>
         <ul className="trust-strip">{d.trustStrip.map((x) => <li key={x}>{x}</li>)}</ul>
 
         {copy ? (

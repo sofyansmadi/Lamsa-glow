@@ -15,7 +15,7 @@ export default function ProductCard({ product, locale, prebuilt = true }: { prod
       </div>
       {c && <span className="card-cat">{d.categories[c.category]}</span>}
       <span className="card-name">{c?.name ?? product.title}</span>
-      <CardPrice variants={product.variants} locale={locale} />
+      <CardPrice variants={product.variants} locale={locale} handle={product.handle} />
     </Link>
   );
 }
