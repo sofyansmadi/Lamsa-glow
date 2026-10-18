@@ -19,9 +19,9 @@ const FEATURED = [
 
 // One picture per world: [product handle prefix, image index]. Chosen for clean, label-free shots.
 const WORLDS = [
-  { key: "devices", handle: "mini-portable-humidifier", image: 0 },
-  { key: "skincare", handle: "30ml-salmon-pdrn", image: 2 },
-  { key: "masks", handle: "5pcs-bio-collagen", image: 0 },
+  { key: "devices", handle: "ipl-hair-removal", image: 0 },
+  { key: "skincare", handle: "2026-new-micro", image: 0 },
+  { key: "masks", handle: "60pcs-box-crystal", image: 0 },
 ] as const;
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
