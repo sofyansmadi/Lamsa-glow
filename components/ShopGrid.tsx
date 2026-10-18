@@ -29,7 +29,8 @@ export default function ShopGrid({ products, locale }: { products: Product[]; lo
   const raw = params.get("c");
   const active = (cats as string[]).includes(raw ?? "") ? (raw as Category) : "all";
   // Jordan sees only the Jordan product; everyone else never sees it.
-  const visible = list.filter((p) => (country === "JO" ? isJordanOnly(p.handle) : !isJordanOnly(p.handle)));
+  const jordanList = list.filter((p) => isJordanOnly(p.handle));
+  const visible = country === "JO" && jordanList.length ? jordanList : list.filter((p) => !isJordanOnly(p.handle));
   const shown = visible.filter((p) => active === "all" || productCopy[p.handle]?.category === active);
 
   return (
