@@ -143,7 +143,7 @@
           "currencyCode": "AED"
         },
         "compareAtPrice": {
-          "amount": "1199.0",
+          "amount": "1200.0",
           "currencyCode": "AED"
         },
         "selectedOptions": [
@@ -383,7 +383,7 @@
         "title": "Standard",
         "availableForSale": true,
         "price": {
-          "amount": "487.0",
+          "amount": "488.0",
           "currencyCode": "AED"
         },
         "compareAtPrice": {
@@ -1266,7 +1266,7 @@
           "currencyCode": "AED"
         },
         "compareAtPrice": {
-          "amount": "251.0",
+          "amount": "252.0",
           "currencyCode": "AED"
         },
         "selectedOptions": [
@@ -1285,7 +1285,7 @@
         "title": "1 box / 10 Pieces (Buy 5 Get 5 Free)",
         "availableForSale": true,
         "price": {
-          "amount": "2248.0",
+          "amount": "2249.0",
           "currencyCode": "AED"
         },
         "compareAtPrice": {
